@@ -1,0 +1,122 @@
+[
+  {
+    "match_number": 91,
+    "round_number": 10,
+    "date": "01/11/2025 15:00",
+    "location": "American Express Stadium",
+    "home_team": "Brighton",
+    "away_team": "Leeds",
+    "predicted_score": "1 - 0",
+    "home_win_probability": 0.45100000500679016,
+    "draw_probability": 0.25,
+    "away_win_probability": 0.29899999499320984
+  },
+  {
+    "match_number": 92,
+    "round_number": 10,
+    "date": "01/11/2025 15:00",
+    "location": "Turf Moor",
+    "home_team": "Burnley",
+    "away_team": "Arsenal",
+    "predicted_score": "2 - 3",
+    "home_win_probability": 0.2199999988079071,
+    "draw_probability": 0.25,
+    "away_win_probability": 0.5299999713897705
+  },
+  {
+    "match_number": 93,
+    "round_number": 10,
+    "date": "01/11/2025 15:00",
+    "location": "Selhurst Park",
+    "home_team": "Crystal Palace",
+    "away_team": "Brentford",
+    "predicted_score": "3 - 1",
+    "home_win_probability": 0.30799999833106995,
+    "draw_probability": 0.15,
+    "away_win_probability": 0.5419999957084656
+  },
+  {
+    "match_number": 94,
+    "round_number": 10,
+    "date": "01/11/2025 15:00",
+    "location": "Craven Cottage",
+    "home_team": "Fulham",
+    "away_team": "Wolves",
+    "predicted_score": "1 - 0",
+    "home_win_probability": 0.49399998784065247,
+    "draw_probability": 0.25,
+    "away_win_probability": 0.25600001215934753
+  },
+  {
+    "match_number": 97,
+    "round_number": 10,
+    "date": "01/11/2025 15:00",
+    "location": "The City Ground",
+    "home_team": "Nott'm Forest",
+    "away_team": "Man Utd",
+    "predicted_score": "1 - 2",
+    "home_win_probability": 0.23100000619888306,
+    "draw_probability": 0.25,
+    "away_win_probability": 0.5189999938011169
+  },
+  {
+    "match_number": 99,
+    "round_number": 10,
+    "date": "01/11/2025 17:30",
+    "location": "Tottenham Hotspur Stadium",
+    "home_team": "Spurs",
+    "away_team": "Chelsea",
+    "predicted_score": "2 - 0",
+    "home_win_probability": 0.46799999475479126,
+    "draw_probability": 0.15,
+    "away_win_probability": 0.38199999928474426
+  },
+  {
+    "match_number": 95,
+    "round_number": 10,
+    "date": "01/11/2025 20:00",
+    "location": "Anfield",
+    "home_team": "Liverpool",
+    "away_team": "Aston Villa",
+    "predicted_score": "2 - 2",
+    "home_win_probability": 0.20000000298023224,
+    "draw_probability": 0.25,
+    "away_win_probability": 0.550000011920929
+  },
+  {
+    "match_number": 100,
+    "round_number": 10,
+    "date": "02/11/2025 14:00",
+    "location": "London Stadium",
+    "home_team": "West Ham",
+    "away_team": "Newcastle",
+    "predicted_score": "1 - 1",
+    "home_win_probability": 0.35100001096725464,
+    "draw_probability": 0.25,
+    "away_win_probability": 0.39899998903274536
+  },
+  {
+    "match_number": 96,
+    "round_number": 10,
+    "date": "02/11/2025 16:30",
+    "location": "Etihad Stadium",
+    "home_team": "Man City",
+    "away_team": "Bournemouth",
+    "predicted_score": "2 - 1",
+    "home_win_probability": 0.531000018119812,
+    "draw_probability": 0.25,
+    "away_win_probability": 0.21899999678134918
+  },
+  {
+    "match_number": 98,
+    "round_number": 10,
+    "date": "03/11/2025 20:00",
+    "location": "Stadium of Light",
+    "home_team": "Sunderland",
+    "away_team": "Everton",
+    "predicted_score": "1 - 2",
+    "home_win_probability": 0.5590000152587891,
+    "draw_probability": 0.25,
+    "away_win_probability": 0.19099999964237213
+  }
+]
