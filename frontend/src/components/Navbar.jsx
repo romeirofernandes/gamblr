@@ -21,7 +21,7 @@ export function Navbar() {
       }}
       className="sticky top-4 z-50 mx-auto max-w-5xl px-4"
     >
-      <div className="rounded-full border bg-background/95 backdrop-blur supports-backdrop-filter:bg-background/60 shadow-lg">
+      <div className="rounded-full border bg-background/95 backdrop-blur supports-backdrop-filter:bg-background/60 shadow-lg py-1">
         <div className="flex h-14 items-center justify-between px-6">
           <motion.div
             whileHover={{ scale: 1.05 }}

@@ -12,7 +12,8 @@ import {
   IoCloseCircle, 
   IoTimeOutline,
   IoTrophyOutline,
-  IoStatsChartOutline
+  IoStatsChartOutline,
+  IoInformationCircleOutline
 } from "react-icons/io5";
 import betsData from "../data/bets.json";
 
@@ -55,7 +56,7 @@ const Gamblr = () => {
 
   return (
     <ThemeProvider defaultTheme="system" storageKey="gamblr-theme">
-      <div className="min-h-screen bg-background pb-8">
+      <div className="min-h-screen bg-background pb-8 relative">
         <Navbar />
         <div className="max-w-5xl mx-auto py-8 px-4 pt-12">
           {/* PNL Summary */}
@@ -259,6 +260,23 @@ const Gamblr = () => {
             </motion.div>
           </motion.div>
         </div>
+
+        {/* Odds Disclaimer - Bottom Right */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.5 }}
+          className="fixed bottom-6 right-6 max-w-xs"
+        >
+          <div className="p-3 rounded-lg bg-muted/95 backdrop-blur border border-border shadow-lg">
+            <div className="flex items-start gap-2">
+              <IoInformationCircleOutline className="h-4 w-4 text-muted-foreground mt-0.5 shrink-0" />
+              <p className="text-xs text-muted-foreground">
+                Odds have been taken from stake.com on 1st Nov at 18:00 IST.
+              </p>
+            </div>
+          </div>
+        </motion.div>
       </div>
     </ThemeProvider>
   );
