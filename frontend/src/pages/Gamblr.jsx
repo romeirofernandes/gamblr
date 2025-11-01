@@ -48,7 +48,7 @@ const Gamblr = () => {
 
   const handlePrevious = () => setCurrentPage((prev) => Math.max(0, prev - 1));
   const handleNext = () => setCurrentPage((prev) => Math.min(BETS_DATA.length - 1, prev + 1));
-  const pnl = calculatePNL(currentBets?.bets);
+  const pnl = calculatePNL(BETS_DATA.flatMap(gw => gw.bets));
 
   // Find the real gameweek number for the current page
   const realGameweekNumber = BETS_DATA[currentPage]?.gameweek;
