@@ -864,7 +864,7 @@
         "bet_on": "Brighton",
         "odds": 1.99,
         "stake": 100,
-        "result": null
+        "result": "won"
       },
       {
         "match_number": 92,
@@ -873,7 +873,7 @@
         "bet_on": "Arsenal",
         "odds": 1.27,
         "stake": 100,
-        "result": null
+        "result": "won"
       },
       {
         "match_number": 93,
@@ -882,7 +882,7 @@
         "bet_on": "Brentford",
         "odds": 3.70,
         "stake": 100,
-        "result": null
+        "result": "lost"
       },
       {
         "match_number": 94,
@@ -891,7 +891,7 @@
         "bet_on": "Fulham",
         "odds": 1.78,
         "stake": 100,
-        "result": null
+        "result": "won"
       },
       {
         "match_number": 97,
@@ -900,7 +900,7 @@
         "bet_on": "Man Utd",
         "odds": 2.10,
         "stake": 100,
-        "result": null
+        "result": "lost"
       },
       {
         "match_number": 99,
