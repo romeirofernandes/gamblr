@@ -1,10 +1,10 @@
 import pandas as pd
 import numpy as np
-from sklearn.model_selection import train_test_split, GridSearchCV
+from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score, mean_absolute_error, mean_squared_error, r2_score, precision_score
-from sklearn.ensemble import RandomForestRegressor
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import Dense, Dropout
+from xgboost import XGBRegressor
 
 df = pd.read_csv('dataset.csv')
 
@@ -75,55 +75,51 @@ param_grid = {
     'max_depth': [5, 10],
     'min_samples_split': [2, 5]
 }
-
-if len(score_X_win) > 0:
-    home_rf = GridSearchCV(RandomForestRegressor(random_state=42), param_grid, cv=3, scoring='r2', n_jobs=-1)
-    home_rf.fit(score_X_win, score_y_home_win)
-    home_goals_model = home_rf.best_estimator_
-
-    away_rf = GridSearchCV(RandomForestRegressor(random_state=42), param_grid, cv=3, scoring='r2', n_jobs=-1)
-    away_rf.fit(score_X_win, score_y_away_win)
-    away_goals_model = away_rf.best_estimator_
-
-    home_pred = home_goals_model.predict(score_X_win)
-    away_pred = away_goals_model.predict(score_X_win)
-
-    print(f"Home Goals MAE: {mean_absolute_error(score_y_home_win, home_pred):.3f}")
-    print(f"Home Goals RMSE: {np.sqrt(mean_squared_error(score_y_home_win, home_pred)):.3f}")
-    print(f"Home Goals R2: {r2_score(score_y_home_win, home_pred):.3f}")
-
-    print(f"Away Goals MAE: {mean_absolute_error(score_y_away_win, away_pred):.3f}")
-    print(f"Away Goals RMSE: {np.sqrt(mean_squared_error(score_y_away_win, away_pred)):.3f}")
-    print(f"Away Goals R2: {r2_score(score_y_away_win, away_pred):.3f}")
-else:
-    print("No predicted wins for score prediction.")
-
 # Score prediction for all test matches
 score_X = df.loc[X_test_rf.index, rolling_features]
 score_y_home = df.loc[X_test_rf.index, 'FTHG']
 score_y_away = df.loc[X_test_rf.index, 'FTAG']
 
-param_grid = {
-    'n_estimators': [100, 200],
-    'max_depth': [5, 10],
-    'min_samples_split': [2, 5]
-}
+# Manual tuning for XGBoost
+best_r2 = -np.inf
+best_params = None
+for n_estimators in [100, 200]:
+    for max_depth in [3, 5, 7]:
+        for learning_rate in [0.05, 0.1, 0.2]:
+            home_xgb = XGBRegressor(n_estimators=n_estimators, max_depth=max_depth, learning_rate=learning_rate, random_state=42)
+            home_xgb.fit(score_X, score_y_home)
+            home_pred = home_xgb.predict(score_X)
+            r2 = r2_score(score_y_home, home_pred)
+            if r2 > best_r2:
+                best_r2 = r2
+                best_params = (n_estimators, max_depth, learning_rate)
+home_xgb = XGBRegressor(n_estimators=best_params[0], max_depth=best_params[1], learning_rate=best_params[2], random_state=42)
+home_xgb.fit(score_X, score_y_home)
+home_pred = home_xgb.predict(score_X)
 
-home_rf = GridSearchCV(RandomForestRegressor(random_state=42), param_grid, cv=3, scoring='r2', n_jobs=-1)
-home_rf.fit(score_X, score_y_home)
-home_goals_model = home_rf.best_estimator_
-
-away_rf = GridSearchCV(RandomForestRegressor(random_state=42), param_grid, cv=3, scoring='r2', n_jobs=-1)
-away_rf.fit(score_X, score_y_away)
-away_goals_model = away_rf.best_estimator_
-
-home_pred = home_goals_model.predict(score_X)
-away_pred = away_goals_model.predict(score_X)
-
+print(f"Best Home XGB params: n_estimators={best_params[0]}, max_depth={best_params[1]}, learning_rate={best_params[2]}")
 print(f"Home Goals MAE: {mean_absolute_error(score_y_home, home_pred):.3f}")
 print(f"Home Goals RMSE: {np.sqrt(mean_squared_error(score_y_home, home_pred)):.3f}")
 print(f"Home Goals R2: {r2_score(score_y_home, home_pred):.3f}")
 
+# Repeat for away goals
+best_r2 = -np.inf
+best_params = None
+for n_estimators in [100, 200]:
+    for max_depth in [3, 5, 7]:
+        for learning_rate in [0.05, 0.1, 0.2]:
+            away_xgb = XGBRegressor(n_estimators=n_estimators, max_depth=max_depth, learning_rate=learning_rate, random_state=42)
+            away_xgb.fit(score_X, score_y_away)
+            away_pred = away_xgb.predict(score_X)
+            r2 = r2_score(score_y_away, away_pred)
+            if r2 > best_r2:
+                best_r2 = r2
+                best_params = (n_estimators, max_depth, learning_rate)
+away_xgb = XGBRegressor(n_estimators=best_params[0], max_depth=best_params[1], learning_rate=best_params[2], random_state=42)
+away_xgb.fit(score_X, score_y_away)
+away_pred = away_xgb.predict(score_X)
+
+print(f"Best Away XGB params: n_estimators={best_params[0]}, max_depth={best_params[1]}, learning_rate={best_params[2]}")
 print(f"Away Goals MAE: {mean_absolute_error(score_y_away, away_pred):.3f}")
 print(f"Away Goals RMSE: {np.sqrt(mean_squared_error(score_y_away, away_pred)):.3f}")
 print(f"Away Goals R2: {r2_score(score_y_away, away_pred):.3f}")
