@@ -3,9 +3,12 @@ import { Moon, Sun } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useTheme } from "./theme-provider";
 import { motion } from "framer-motion";
+import { useNavigate, useLocation } from "react-router-dom";
 
 export function Navbar() {
   const { theme, setTheme } = useTheme();
+  const navigate = useNavigate();
+  const location = useLocation();
 
   return (
     <motion.nav
@@ -23,9 +26,34 @@ export function Navbar() {
           <motion.div
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className="font-heading text-xl font-bold tracking-tight"
+            onClick={() => navigate(location.pathname === '/' ? '/gamblr' : '/')}
+            className="font-heading text-xl font-bold tracking-tight cursor-pointer relative"
           >
-            gamblr.
+            <motion.span
+              animate={{
+                backgroundPosition: ["0% 50%", "100% 50%", "0% 50%"],
+              }}
+              transition={{
+                duration: 3,
+                repeat: Infinity,
+                ease: "linear",
+              }}
+              style={{
+                background: "linear-gradient(90deg, currentColor 0%, #22c55e 25%, currentColor 50%, #22c55e 75%, currentColor 100%)",
+                backgroundSize: "200% auto",
+                WebkitBackgroundClip: "text",
+                WebkitTextFillColor: "transparent",
+                backgroundClip: "text",
+              }}
+            >
+              gamblr.
+            </motion.span>
+            <motion.div
+              className="absolute -bottom-1 left-0 h-0.5 bg-green-500"
+              initial={{ width: 0 }}
+              whileHover={{ width: "100%" }}
+              transition={{ duration: 0.3 }}
+            />
           </motion.div>
 
           <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
