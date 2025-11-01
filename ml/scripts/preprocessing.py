@@ -1,7 +1,7 @@
 import pandas as pd
 import re
 
-df = pd.read_csv('../dataset.csv')
+df = pd.read_csv('./dataset.csv')
 
 # Fixing date formats to DD/MM/YYYY
 def fix_date(date_str):
@@ -23,5 +23,14 @@ df['FTR'] = df['FTR'].replace('NH', 'A')
 df.loc[df['FTHG'] > df['FTAG'], 'FTR'] = 'H'
 df.loc[df['FTHG'] < df['FTAG'], 'FTR'] = 'A'
 df.loc[df['FTHG'] == df['FTAG'], 'FTR'] = 'D'
+
+# Replacing 'Middlesboro' with 'Middlesbrough'
+df['HomeTeam'] = df['HomeTeam'].replace('Middlesboro', 'Middlesbrough')
+df['AwayTeam'] = df['AwayTeam'].replace('Middlesboro', 'Middlesbrough')
+
+teams = pd.unique(df[['HomeTeam', 'AwayTeam']].values.ravel())
+
+for team in sorted(teams):
+    print(team)
 
 df.to_csv('dataset.csv', index=False)
