@@ -909,7 +909,7 @@
         "bet_on": "Spurs",
         "odds": 2.85,
         "stake": 100,
-        "result": null
+        "result": "lost"
       },
       {
         "match_number": 95,
@@ -918,7 +918,7 @@
         "bet_on": "Aston Villa",
         "odds": 4.70,
         "stake": 100,
-        "result": null
+        "result": "lost"
       },
       {
         "match_number": 100,
@@ -927,7 +927,7 @@
         "bet_on": "Newcastle",
         "odds": 1.63,
         "stake": 100,
-        "result": null
+        "result": "lost"
       },
       {
         "match_number": 96,

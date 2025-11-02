@@ -84,17 +84,14 @@ def get_all_gameweeks():
                 'away_team': match['Away Team'],
                 'result': match['Result'] if pd.notna(match['Result']) else None
             }
-            
-            # Add predictions only for current gameweek
-            if round_num == current_gw and pd.isna(match['Result']):
-                pred = pred_lookup.get(int(match['Match Number']))
-                if pred:
-                    match_data.update({
-                        'predicted_score': pred['predicted_score'],
-                        'home_win_probability': pred['home_win_probability'],
-                        'draw_probability': pred['draw_probability'],
-                        'away_win_probability': pred['away_win_probability']
-                    })
+            pred = pred_lookup.get(int(match['Match Number']))
+            if pred:
+                match_data.update({
+                    'predicted_score': pred['predicted_score'],
+                    'home_win_probability': pred['home_win_probability'],
+                    'draw_probability': pred['draw_probability'],
+                    'away_win_probability': pred['away_win_probability']
+                })
             
             matches.append(Match(**match_data))
         
@@ -141,16 +138,14 @@ def get_gameweek(round_number: int):
             'away_team': match['Away Team'],
             'result': match['Result'] if pd.notna(match['Result']) else None
         }
-        
-        if round_number == current_gw and pd.isna(match['Result']):
-            pred = pred_lookup.get(int(match['Match Number']))
-            if pred:
-                match_data.update({
-                    'predicted_score': pred['predicted_score'],
-                    'home_win_probability': pred['home_win_probability'],
-                    'draw_probability': pred['draw_probability'],
-                    'away_win_probability': pred['away_win_probability']
-                })
+        pred = pred_lookup.get(int(match['Match Number']))
+        if pred:
+            match_data.update({
+                'predicted_score': pred['predicted_score'],
+                'home_win_probability': pred['home_win_probability'],
+                'draw_probability': pred['draw_probability'],
+                'away_win_probability': pred['away_win_probability']
+            })
         
         matches.append(Match(**match_data))
     

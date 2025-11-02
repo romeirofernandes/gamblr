@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
@@ -18,9 +18,7 @@ import {
 import betsData from "../data/bets.json";
 
 const Gamblr = () => {
-  const currentGwIdx = betsData.findIndex(
-    gw => gw.bets.some(bet => bet.stake === 100)
-  );
+  const currentGwIdx = betsData.findIndex(gw => gw.bets.some(bet => bet.stake === 100));
   const [currentPage, setCurrentPage] = useState(currentGwIdx >= 0 ? currentGwIdx : 0);
 
   const BETS_DATA = betsData;
@@ -50,75 +48,62 @@ const Gamblr = () => {
   const handleNext = () => setCurrentPage((prev) => Math.min(BETS_DATA.length - 1, prev + 1));
   const pnl = calculatePNL(BETS_DATA.flatMap(gw => gw.bets));
 
-  // Find the real gameweek number for the current page
   const realGameweekNumber = BETS_DATA[currentPage]?.gameweek;
   const totalGameweeks = BETS_DATA.length;
 
   return (
     <ThemeProvider defaultTheme="system" storageKey="gamblr-theme">
-      <div className="min-h-screen bg-background pb-8 relative">
+      <div className="min-h-screen bg-background pb-20 md:pb-8">
         <Navbar />
-        <div className="max-w-5xl mx-auto py-8 px-4 pt-12">
+        <div className="max-w-5xl mx-auto py-4 md:py-8 px-3 md:px-4 pt-16 md:pt-20">
           {/* PNL Summary */}
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.1 }}
+            transition={{ duration: 0.2 }}
           >
-            <Card className="mb-8 shadow-md border-2">
-              <CardHeader>
+            <Card className="mb-6 md:mb-8 shadow-lg border-2">
+              <CardHeader className="pb-3">
                 <div className="flex items-center gap-2">
-                  <IoStatsChartOutline className="h-6 w-6 text-primary" />
-                  <CardTitle className="text-2xl font-bold">Profit & Loss Summary</CardTitle>
+                  <IoStatsChartOutline className="h-5 w-5 md:h-6 md:w-6 text-blue-600" />
+                  <CardTitle className="text-lg md:text-2xl font-bold">P&L Summary</CardTitle>
                 </div>
               </CardHeader>
               <CardContent>
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-                  <motion.div
-                    whileHover={{ y: -2 }}
-                    className="p-4 rounded-lg border-2 border-border bg-card"
-                  >
-                    <p className="text-xs text-muted-foreground mb-2 flex items-center gap-1">
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4">
+                  <div className="p-3 md:p-4 rounded-lg border-2 border-border bg-card">
+                    <p className="text-[10px] md:text-xs text-muted-foreground mb-1 md:mb-2 flex items-center gap-1">
                       <IoTrophyOutline className="h-3 w-3" />
                       Total P&L
                     </p>
-                    <p className={`text-2xl font-bold ${pnl.total >= 0 ? 'text-green-600' : 'text-red-600'}`}>
+                    <p className={`text-xl md:text-2xl font-bold ${pnl.total >= 0 ? 'text-green-600' : 'text-red-600'}`}>
                       {pnl.total >= 0 ? '+' : ''}₹{pnl.total.toFixed(2)}
                     </p>
-                  </motion.div>
+                  </div>
 
-                  <motion.div
-                    whileHover={{ y: -2 }}
-                    className="p-4 rounded-lg border-2 border-green-200 dark:border-green-900"
-                  >
-                    <p className="text-xs text-muted-foreground mb-2 flex items-center gap-1">
+                  <div className="p-3 md:p-4 rounded-lg border-2 border-green-200 bg-green-50 dark:border-green-900 dark:bg-green-950/20">
+                    <p className="text-[10px] md:text-xs text-muted-foreground mb-1 md:mb-2 flex items-center gap-1">
                       <IoCheckmarkCircle className="h-3 w-3 text-green-600" />
                       Won
                     </p>
-                    <p className="text-2xl font-bold text-green-600">{pnl.won}</p>
-                  </motion.div>
+                    <p className="text-xl md:text-2xl font-bold text-green-600">{pnl.won}</p>
+                  </div>
 
-                  <motion.div
-                    whileHover={{ y: -2 }}
-                    className="p-4 rounded-lg border-2 border-red-200  dark:border-red-900 "
-                  >
-                    <p className="text-xs text-muted-foreground mb-2 flex items-center gap-1">
+                  <div className="p-3 md:p-4 rounded-lg border-2 border-red-200 bg-red-50 dark:border-red-900 dark:bg-red-950/20">
+                    <p className="text-[10px] md:text-xs text-muted-foreground mb-1 md:mb-2 flex items-center gap-1">
                       <IoCloseCircle className="h-3 w-3 text-red-600" />
                       Lost
                     </p>
-                    <p className="text-2xl font-bold text-red-600">{pnl.lost}</p>
-                  </motion.div>
+                    <p className="text-xl md:text-2xl font-bold text-red-600">{pnl.lost}</p>
+                  </div>
 
-                  <motion.div
-                    whileHover={{ y: -2 }}
-                    className="p-4 rounded-lg border-2 border-blue-200 dark:border-blue-900"
-                  >
-                    <p className="text-xs text-muted-foreground mb-2 flex items-center gap-1">
-                      <IoTimeOutline className="h-3 w-3 text-blue-400" />
+                  <div className="p-3 md:p-4 rounded-lg border-2 border-blue-200 bg-blue-50 dark:border-blue-900 dark:bg-blue-950/20">
+                    <p className="text-[10px] md:text-xs text-muted-foreground mb-1 md:mb-2 flex items-center gap-1">
+                      <IoTimeOutline className="h-3 w-3 text-blue-600" />
                       Pending
                     </p>
-                    <p className="text-2xl font-bold text-blue-400">{pnl.pending}</p>
-                  </motion.div>
+                    <p className="text-xl md:text-2xl font-bold text-blue-600">{pnl.pending}</p>
+                  </div>
                 </div>
               </CardContent>
             </Card>
@@ -129,37 +114,32 @@ const Gamblr = () => {
             {currentBets && (
               <motion.div
                 key={currentPage}
-                initial={{ opacity: 0, x: 20 }}
-                animate={{ opacity: 1, x: 0 }}
-                exit={{ opacity: 0, x: -20 }}
-                transition={{
-                  type: "spring",
-                  stiffness: 300,
-                  damping: 30,
-                }}
+                initial={{ opacity: 0, y: 10 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -10 }}
+                transition={{ duration: 0.2 }}
               >
-                <Card className="mb-8 shadow-md">
-                  <CardHeader>
-                    <div className="flex items-center justify-between">
-                      <CardTitle className="text-xl font-semibold">
-                        {currentBets.gameweek} Betting Slip
+                <Card className="mb-6 md:mb-8 shadow-lg border-2">
+                  <CardHeader className="pb-3">
+                    <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
+                      <CardTitle className="text-lg md:text-xl font-semibold">
+                        Gameweek {currentBets.gameweek} Bets
                       </CardTitle>
-                      <Badge variant="outline" className="text-sm">
-                        {currentBets.bets.filter(b => b.stake > 0).length} Active Bets
+                      <Badge variant="outline" className="text-xs w-fit">
+                        {currentBets.bets.filter(b => b.stake > 0).length} Active
                       </Badge>
                     </div>
                   </CardHeader>
                   <Separator />
-                  <CardContent>
-                    <div className="space-y-4">
+                  <CardContent className="p-3 md:p-6">
+                    <div className="space-y-3">
                       {currentBets.bets.filter(b => b.stake > 0).map((bet, index) => (
                         <motion.div
                           key={bet.match_number}
-                          initial={{ opacity: 0, y: 10 }}
-                          animate={{ opacity: 1, y: 0 }}
+                          initial={{ opacity: 0 }}
+                          animate={{ opacity: 1 }}
                           transition={{ delay: index * 0.03 }}
-                          whileHover={{ x: 4 }}
-                          className={`p-4 rounded-lg border-2 transition-all cursor-pointer ${
+                          className={`p-3 md:p-4 rounded-lg border-2 transition-all ${
                             bet.result === "won"
                               ? "border-green-200 bg-green-50 dark:border-green-900 dark:bg-green-950/20"
                               : bet.result === "lost"
@@ -167,26 +147,26 @@ const Gamblr = () => {
                               : "border-border bg-muted/30"
                           }`}
                         >
-                          <div className="flex items-center justify-between">
-                            <div className="flex-1">
-                              <div className="flex items-center gap-2 mb-2">
-                                <span className="text-sm font-semibold">{bet.home_team}</span>
-                                <span className="text-xs text-muted-foreground">vs</span>
-                                <span className="text-sm font-semibold">{bet.away_team}</span>
+                          <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-3">
+                            <div className="flex-1 space-y-2">
+                              <div className="flex items-center gap-2 text-sm md:text-base font-semibold">
+                                <span className="truncate">{bet.home_team}</span>
+                                <span className="text-xs text-muted-foreground shrink-0">vs</span>
+                                <span className="truncate">{bet.away_team}</span>
                               </div>
-                              <div className="flex items-center gap-4 text-xs text-muted-foreground">
+                              <div className="flex flex-wrap items-center gap-x-3 gap-y-1 text-[10px] md:text-xs text-muted-foreground">
                                 <span>Bet: <span className="font-semibold text-foreground">{bet.bet_on}</span></span>
                                 <span>Odds: <span className="font-semibold text-foreground">{bet.odds || 'TBD'}</span></span>
                                 <span>Stake: <span className="font-semibold text-foreground">₹{bet.stake}</span></span>
                               </div>
                             </div>
-                            <div className="flex items-center gap-3">
+                            <div className="flex items-center justify-between md:justify-end gap-3 pt-2 md:pt-0 border-t md:border-0">
                               {bet.result === "won" && (
                                 <>
                                   <span className="text-sm font-bold text-green-600">
                                     +₹{bet.odds ? ((bet.stake * bet.odds) - bet.stake).toFixed(2) : '0.00'}
                                   </span>
-                                  <IoCheckmarkCircle className="h-6 w-6 text-green-600" />
+                                  <IoCheckmarkCircle className="h-5 w-5 md:h-6 md:w-6 text-green-600 shrink-0" />
                                 </>
                               )}
                               {bet.result === "lost" && (
@@ -194,15 +174,15 @@ const Gamblr = () => {
                                   <span className="text-sm font-bold text-red-600">
                                     -₹{bet.stake.toFixed(2)}
                                   </span>
-                                  <IoCloseCircle className="h-6 w-6 text-red-600" />
+                                  <IoCloseCircle className="h-5 w-5 md:h-6 md:w-6 text-red-600 shrink-0" />
                                 </>
                               )}
                               {!bet.result && (
                                 <>
-                                  <span className="text-sm font-medium text-blue-400">
+                                  <span className="text-xs md:text-sm font-medium text-blue-600">
                                     Potential: ₹{bet.odds ? ((bet.stake * bet.odds) - bet.stake).toFixed(2) : '0.00'}
                                   </span>
-                                  <IoTimeOutline className="h-6 w-6 text-blue-400" />
+                                  <IoTimeOutline className="h-5 w-5 md:h-6 md:w-6 text-blue-600 shrink-0" />
                                 </>
                               )}
                             </div>
@@ -212,8 +192,8 @@ const Gamblr = () => {
 
                       {currentBets.bets.filter(b => b.stake > 0).length === 0 && (
                         <div className="text-center py-12 text-muted-foreground">
-                          <IoTimeOutline className="h-12 w-12 mx-auto mb-3 opacity-50" />
-                          <p>No active bets for this gameweek</p>
+                          <IoTimeOutline className="h-10 w-10 md:h-12 md:w-12 mx-auto mb-3 opacity-50" />
+                          <p className="text-sm">No active bets for this gameweek</p>
                         </div>
                       )}
                     </div>
@@ -224,59 +204,47 @@ const Gamblr = () => {
           </AnimatePresence>
 
           {/* Pagination */}
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.4 }}
-            className="flex items-center justify-center gap-6 mt-4"
-          >
-            <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-              <Button
-                variant="outline"
-                onClick={handlePrevious}
-                disabled={currentPage === 0}
-                className="rounded-full"
-              >
-                <ChevronLeft className="h-5 w-5" />
-              </Button>
-            </motion.div>
-            <span className="text-sm text-muted-foreground">
-              Gameweek {realGameweekNumber} of {totalGameweeks}
+          <div className="flex items-center justify-center gap-4 mt-6">
+            <Button
+              variant="outline"
+              onClick={handlePrevious}
+              disabled={currentPage === 0}
+              size="sm"
+              className="rounded-full"
+            >
+              <ChevronLeft className="h-4 w-4" />
+            </Button>
+            <div className="flex flex-col sm:flex-row items-center gap-1 sm:gap-2">
+              <span className="text-xs md:text-sm text-muted-foreground font-medium">
+                Gameweek {realGameweekNumber} of {totalGameweeks}
+              </span>
               {currentPage === currentGwIdx && (
-                <Badge variant="outline" className="ml-2 bg-green-100 text-green-800 border-green-300 dark:bg-green-900/30 dark:text-green-400 dark:border-green-800">
-                  Current
-                </Badge>
+                <Badge className="bg-green-500 text-white text-[10px] md:text-xs border-0">Current</Badge>
               )}
-            </span>
-            <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-              <Button
-                variant="outline"
-                onClick={handleNext}
-                disabled={currentPage === BETS_DATA.length - 1}
-                className="rounded-full"
-              >
-                <ChevronRight className="h-5 w-5" />
-              </Button>
-            </motion.div>
-          </motion.div>
+            </div>
+            <Button
+              variant="outline"
+              onClick={handleNext}
+              disabled={currentPage === BETS_DATA.length - 1}
+              size="sm"
+              className="rounded-full"
+            >
+              <ChevronRight className="h-4 w-4" />
+            </Button>
+          </div>
         </div>
 
-        {/* Odds Disclaimer - Bottom Right */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.5 }}
-          className="fixed bottom-6 right-6 max-w-xs"
-        >
-          <div className="p-3 rounded-lg bg-muted/95 backdrop-blur border border-border shadow-lg">
+        {/* Disclaimer */}
+        <div className="fixed bottom-3 right-3 md:bottom-6 md:right-6 max-w-[280px] md:max-w-xs z-50">
+          <div className="p-2.5 md:p-3 rounded-lg bg-muted/95 backdrop-blur border border-border shadow-lg">
             <div className="flex items-start gap-2">
-              <IoInformationCircleOutline className="h-4 w-4 text-muted-foreground mt-0.5 shrink-0" />
-              <p className="text-xs text-muted-foreground">
-                Odds have been taken from stake.com on 1st Nov at 18:00 IST.
+              <IoInformationCircleOutline className="h-3.5 w-3.5 md:h-4 md:w-4 text-muted-foreground mt-0.5 shrink-0" />
+              <p className="text-[10px] md:text-xs text-muted-foreground leading-tight">
+                Odds taken from stake.com on 1st Nov at 18:00 IST.
               </p>
             </div>
           </div>
-        </motion.div>
+        </div>
       </div>
     </ThemeProvider>
   );
