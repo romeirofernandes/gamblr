@@ -1,7 +1,99 @@
 [
   {
     "gameweek": 1,
-    "bets": [
+    "ml_bets": [
+      {
+        "match_number": 1,
+        "home_team": "Liverpool",
+        "away_team": "Bournemouth",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 2,
+        "home_team": "Aston Villa",
+        "away_team": "Newcastle",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 3,
+        "home_team": "Brighton",
+        "away_team": "Fulham",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 5,
+        "home_team": "Sunderland",
+        "away_team": "West Ham",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 6,
+        "home_team": "Spurs",
+        "away_team": "Burnley",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 7,
+        "home_team": "Wolves",
+        "away_team": "Man City",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 4,
+        "home_team": "Nott'm Forest",
+        "away_team": "Brentford",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 8,
+        "home_team": "Chelsea",
+        "away_team": "Crystal Palace",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 9,
+        "home_team": "Man Utd",
+        "away_team": "Arsenal",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 10,
+        "home_team": "Leeds",
+        "away_team": "Everton",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      }
+    ],
+    "llm_bets": [
       {
         "match_number": 1,
         "home_team": "Liverpool",
@@ -96,7 +188,99 @@
   },
   {
     "gameweek": 2,
-    "bets": [
+    "ml_bets": [
+      {
+        "match_number": 20,
+        "home_team": "West Ham",
+        "away_team": "Chelsea",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 18,
+        "home_team": "Man City",
+        "away_team": "Spurs",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 12,
+        "home_team": "Bournemouth",
+        "away_team": "Wolves",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 13,
+        "home_team": "Brentford",
+        "away_team": "Aston Villa",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 14,
+        "home_team": "Burnley",
+        "away_team": "Sunderland",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 11,
+        "home_team": "Arsenal",
+        "away_team": "Leeds",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 15,
+        "home_team": "Crystal Palace",
+        "away_team": "Nott'm Forest",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 16,
+        "home_team": "Everton",
+        "away_team": "Brighton",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 17,
+        "home_team": "Fulham",
+        "away_team": "Man Utd",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 19,
+        "home_team": "Newcastle",
+        "away_team": "Liverpool",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      }
+    ],
+    "llm_bets": [
       {
         "match_number": 20,
         "home_team": "West Ham",
@@ -191,7 +375,99 @@
   },
   {
     "gameweek": 3,
-    "bets": [
+    "ml_bets": [
+      {
+        "match_number": 23,
+        "home_team": "Chelsea",
+        "away_team": "Fulham",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 26,
+        "home_team": "Man Utd",
+        "away_team": "Burnley",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 28,
+        "home_team": "Sunderland",
+        "away_team": "Brentford",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 29,
+        "home_team": "Spurs",
+        "away_team": "Bournemouth",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 30,
+        "home_team": "Wolves",
+        "away_team": "Everton",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 24,
+        "home_team": "Leeds",
+        "away_team": "Newcastle",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 22,
+        "home_team": "Brighton",
+        "away_team": "Man City",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 27,
+        "home_team": "Nott'm Forest",
+        "away_team": "West Ham",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 25,
+        "home_team": "Liverpool",
+        "away_team": "Arsenal",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 21,
+        "home_team": "Aston Villa",
+        "away_team": "Crystal Palace",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      }
+    ],
+    "llm_bets": [
       {
         "match_number": 23,
         "home_team": "Chelsea",
@@ -286,7 +562,99 @@
   },
   {
     "gameweek": 4,
-    "bets": [
+    "ml_bets": [
+      {
+        "match_number": 31,
+        "home_team": "Arsenal",
+        "away_team": "Nott'm Forest",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 32,
+        "home_team": "Bournemouth",
+        "away_team": "Brighton",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 35,
+        "home_team": "Crystal Palace",
+        "away_team": "Sunderland",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 36,
+        "home_team": "Everton",
+        "away_team": "Aston Villa",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 37,
+        "home_team": "Fulham",
+        "away_team": "Leeds",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 39,
+        "home_team": "Newcastle",
+        "away_team": "Wolves",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 40,
+        "home_team": "West Ham",
+        "away_team": "Spurs",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 33,
+        "home_team": "Brentford",
+        "away_team": "Chelsea",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 34,
+        "home_team": "Burnley",
+        "away_team": "Liverpool",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 38,
+        "home_team": "Man City",
+        "away_team": "Man Utd",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      }
+    ],
+    "llm_bets": [
       {
         "match_number": 31,
         "home_team": "Arsenal",
@@ -381,7 +749,99 @@
   },
   {
     "gameweek": 5,
-    "bets": [
+    "ml_bets": [
+      {
+        "match_number": 46,
+        "home_team": "Liverpool",
+        "away_team": "Everton",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 43,
+        "home_team": "Brighton",
+        "away_team": "Spurs",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 44,
+        "home_team": "Burnley",
+        "away_team": "Nott'm Forest",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 49,
+        "home_team": "West Ham",
+        "away_team": "Crystal Palace",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 50,
+        "home_team": "Wolves",
+        "away_team": "Leeds",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 47,
+        "home_team": "Man Utd",
+        "away_team": "Chelsea",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 45,
+        "home_team": "Fulham",
+        "away_team": "Brentford",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 42,
+        "home_team": "Bournemouth",
+        "away_team": "Newcastle",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 48,
+        "home_team": "Sunderland",
+        "away_team": "Aston Villa",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 41,
+        "home_team": "Arsenal",
+        "away_team": "Man City",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      }
+    ],
+    "llm_bets": [
       {
         "match_number": 46,
         "home_team": "Liverpool",
@@ -476,7 +936,99 @@
   },
   {
     "gameweek": 6,
-    "bets": [
+    "ml_bets": [
+      {
+        "match_number": 52,
+        "home_team": "Brentford",
+        "away_team": "Man Utd",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 53,
+        "home_team": "Chelsea",
+        "away_team": "Brighton",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 54,
+        "home_team": "Crystal Palace",
+        "away_team": "Liverpool",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 56,
+        "home_team": "Leeds",
+        "away_team": "Bournemouth",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 57,
+        "home_team": "Man City",
+        "away_team": "Burnley",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 59,
+        "home_team": "Nott'm Forest",
+        "away_team": "Sunderland",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 60,
+        "home_team": "Spurs",
+        "away_team": "Wolves",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 51,
+        "home_team": "Aston Villa",
+        "away_team": "Fulham",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 58,
+        "home_team": "Newcastle",
+        "away_team": "Arsenal",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 55,
+        "home_team": "Everton",
+        "away_team": "West Ham",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      }
+    ],
+    "llm_bets": [
       {
         "match_number": 52,
         "home_team": "Brentford",
@@ -571,7 +1123,99 @@
   },
   {
     "gameweek": 7,
-    "bets": [
+    "ml_bets": [
+      {
+        "match_number": 63,
+        "home_team": "Bournemouth",
+        "away_team": "Fulham",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 67,
+        "home_team": "Leeds",
+        "away_team": "Spurs",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 61,
+        "home_team": "Arsenal",
+        "away_team": "West Ham",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 68,
+        "home_team": "Man Utd",
+        "away_team": "Sunderland",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 65,
+        "home_team": "Chelsea",
+        "away_team": "Liverpool",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 62,
+        "home_team": "Aston Villa",
+        "away_team": "Burnley",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 66,
+        "home_team": "Everton",
+        "away_team": "Crystal Palace",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 69,
+        "home_team": "Newcastle",
+        "away_team": "Nott'm Forest",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 70,
+        "home_team": "Wolves",
+        "away_team": "Brighton",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 64,
+        "home_team": "Brentford",
+        "away_team": "Man City",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      }
+    ],
+    "llm_bets": [
       {
         "match_number": 63,
         "home_team": "Bournemouth",
@@ -666,7 +1310,99 @@
   },
   {
     "gameweek": 8,
-    "bets": [
+    "ml_bets": [
+      {
+        "match_number": 77,
+        "home_team": "Nott'm Forest",
+        "away_team": "Chelsea",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 71,
+        "home_team": "Brighton",
+        "away_team": "Newcastle",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 72,
+        "home_team": "Burnley",
+        "away_team": "Leeds",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 73,
+        "home_team": "Crystal Palace",
+        "away_team": "Bournemouth",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 76,
+        "home_team": "Man City",
+        "away_team": "Everton",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 78,
+        "home_team": "Sunderland",
+        "away_team": "Wolves",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 74,
+        "home_team": "Fulham",
+        "away_team": "Arsenal",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 79,
+        "home_team": "Spurs",
+        "away_team": "Aston Villa",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 75,
+        "home_team": "Liverpool",
+        "away_team": "Man Utd",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 80,
+        "home_team": "West Ham",
+        "away_team": "Brentford",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      }
+    ],
+    "llm_bets": [
       {
         "match_number": 77,
         "home_team": "Nott'm Forest",
@@ -761,7 +1497,99 @@
   },
   {
     "gameweek": 9,
-    "bets": [
+    "ml_bets": [
+      {
+        "match_number": 87,
+        "home_team": "Leeds",
+        "away_team": "West Ham",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 85,
+        "home_team": "Chelsea",
+        "away_team": "Sunderland",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 89,
+        "home_team": "Newcastle",
+        "away_team": "Fulham",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 88,
+        "home_team": "Man Utd",
+        "away_team": "Brighton",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 84,
+        "home_team": "Brentford",
+        "away_team": "Liverpool",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 81,
+        "home_team": "Arsenal",
+        "away_team": "Crystal Palace",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 82,
+        "home_team": "Aston Villa",
+        "away_team": "Man City",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 90,
+        "home_team": "Wolves",
+        "away_team": "Burnley",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 83,
+        "home_team": "Bournemouth",
+        "away_team": "Nott'm Forest",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 86,
+        "home_team": "Everton",
+        "away_team": "Spurs",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      }
+    ],
+    "llm_bets": [
       {
         "match_number": 87,
         "home_team": "Leeds",
@@ -856,7 +1684,7 @@
   },
   {
     "gameweek": 10,
-    "bets": [
+    "ml_bets": [
       {
         "match_number": 91,
         "home_team": "Brighton",
@@ -880,7 +1708,7 @@
         "home_team": "Crystal Palace",
         "away_team": "Brentford",
         "bet_on": "Brentford",
-        "odds": 3.70,
+        "odds": 3.7,
         "stake": 100,
         "result": "lost"
       },
@@ -898,7 +1726,7 @@
         "home_team": "Nott'm Forest",
         "away_team": "Man Utd",
         "bet_on": "Man Utd",
-        "odds": 2.10,
+        "odds": 2.1,
         "stake": 100,
         "result": "lost"
       },
@@ -916,7 +1744,7 @@
         "home_team": "Liverpool",
         "away_team": "Aston Villa",
         "bet_on": "Aston Villa",
-        "odds": 4.70,
+        "odds": 4.7,
         "stake": 100,
         "result": "lost"
       },
@@ -943,110 +1771,386 @@
         "home_team": "Sunderland",
         "away_team": "Everton",
         "bet_on": "Sunderland",
-        "odds": 2.80,
+        "odds": 2.8,
         "stake": 100,
         "result": "lost"
+      }
+    ],
+    "llm_bets": [
+      {
+        "match_number": 91,
+        "home_team": "Brighton",
+        "away_team": "Leeds",
+        "bet_on": "Brighton",
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 92,
+        "home_team": "Burnley",
+        "away_team": "Arsenal",
+        "bet_on": "Arsenal",
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 93,
+        "home_team": "Crystal Palace",
+        "away_team": "Brentford",
+        "bet_on": "Brentford",
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 94,
+        "home_team": "Fulham",
+        "away_team": "Wolves",
+        "bet_on": "Fulham",
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 97,
+        "home_team": "Nott'm Forest",
+        "away_team": "Man Utd",
+        "bet_on": "Man Utd",
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 99,
+        "home_team": "Spurs",
+        "away_team": "Chelsea",
+        "bet_on": "Spurs",
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 95,
+        "home_team": "Liverpool",
+        "away_team": "Aston Villa",
+        "bet_on": "Aston Villa",
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 100,
+        "home_team": "West Ham",
+        "away_team": "Newcastle",
+        "bet_on": "Newcastle",
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 96,
+        "home_team": "Man City",
+        "away_team": "Bournemouth",
+        "bet_on": "Man City",
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 98,
+        "home_team": "Sunderland",
+        "away_team": "Everton",
+        "bet_on": "Sunderland",
+        "odds": 0,
+        "stake": 0,
+        "result": null
       }
     ]
   },
   {
     "gameweek": 11,
-    "bets": [
+    "ml_bets": [
       {
         "match_number": 109,
         "home_team": "Spurs",
         "away_team": "Man Utd",
-        "bet_on": null,
-        "odds": 0,
-        "stake": 0,
+        "bet_on": "Draw",
+        "odds": 3.55,
+        "stake": 100,
         "result": null
       },
       {
         "match_number": 105,
         "home_team": "Everton",
         "away_team": "Fulham",
-        "bet_on": null,
-        "odds": 0,
-        "stake": 0,
+        "bet_on": "Everton",
+        "odds": 2.31,
+        "stake": 100,
         "result": null
       },
       {
         "match_number": 110,
         "home_team": "West Ham",
         "away_team": "Burnley",
-        "bet_on": null,
-        "odds": 0,
-        "stake": 0,
+        "bet_on": "Draw",
+        "odds": 3.65,
+        "stake": 100,
         "result": null
       },
       {
         "match_number": 108,
         "home_team": "Sunderland",
         "away_team": "Arsenal",
-        "bet_on": null,
-        "odds": 0,
-        "stake": 0,
+        "bet_on": "Arsenal",
+        "odds": 1.46,
+        "stake": 100,
         "result": null
       },
       {
         "match_number": 103,
         "home_team": "Chelsea",
         "away_team": "Wolves",
-        "bet_on": null,
-        "odds": 0,
-        "stake": 0,
+        "bet_on": "Chelsea",
+        "odds": 1.43,
+        "stake": 100,
         "result": null
       },
       {
         "match_number": 101,
         "home_team": "Aston Villa",
         "away_team": "Bournemouth",
-        "bet_on": null,
-        "odds": 0,
-        "stake": 0,
+        "bet_on": "Aston Villa",
+        "odds": 2.31,
+        "stake": 100,
         "result": null
       },
       {
         "match_number": 102,
         "home_team": "Brentford",
         "away_team": "Newcastle",
-        "bet_on": null,
-        "odds": 0,
-        "stake": 0,
+        "bet_on": "Draw",
+        "odds": 3.45,
+        "stake": 100,
         "result": null
       },
       {
         "match_number": 104,
         "home_team": "Crystal Palace",
         "away_team": "Brighton",
-        "bet_on": null,
-        "odds": 0,
-        "stake": 0,
+        "bet_on": "Brighton",
+        "odds": 3.15,
+        "stake": 100,
         "result": null
       },
       {
         "match_number": 107,
         "home_team": "Nott'm Forest",
         "away_team": "Leeds",
-        "bet_on": null,
-        "odds": 0,
-        "stake": 0,
+        "bet_on": "Draw",
+        "odds": 3.35,
+        "stake": 100,
         "result": null
       },
       {
         "match_number": 106,
         "home_team": "Man City",
         "away_team": "Liverpool",
-        "bet_on": null,
-        "odds": 0,
-        "stake": 0,
+        "bet_on": "Man City",
+        "odds": 1.91,
+        "stake": 100,
+        "result": null
+      }
+    ],
+    "llm_bets": [
+      {
+        "match_number": 109,
+        "home_team": "Spurs",
+        "away_team": "Man Utd",
+        "bet_on": "Spurs",
+        "odds": 3.00,
+        "stake": 100,
+        "result": null
+      },
+      {
+        "match_number": 105,
+        "home_team": "Everton",
+        "away_team": "Fulham",
+        "bet_on": "Draw",
+        "odds": 3.25,
+        "stake": 100,
+        "result": null
+      },
+      {
+        "match_number": 110,
+        "home_team": "West Ham",
+        "away_team": "Burnley",
+        "bet_on": "West Ham",
+        "odds": 1.86,
+        "stake": 100,
+        "result": null
+      },
+      {
+        "match_number": 108,
+        "home_team": "Sunderland",
+        "away_team": "Arsenal",
+        "bet_on": "Arsenal",
+        "odds": 1.46,
+        "stake": 100,
+        "result": null
+      },
+      {
+        "match_number": 103,
+        "home_team": "Chelsea",
+        "away_team": "Wolves",
+        "bet_on": "Chelsea",
+        "odds": 1.43,
+        "stake": 100,
+        "result": null
+      },
+      {
+        "match_number": 101,
+        "home_team": "Aston Villa",
+        "away_team": "Bournemouth",
+        "bet_on": "Aston Villa",
+        "odds": 2.31,
+        "stake": 100,
+        "result": null
+      },
+      {
+        "match_number": 102,
+        "home_team": "Brentford",
+        "away_team": "Newcastle",
+        "bet_on": "Newcastle",
+        "odds": 2.50,
+        "stake": 100,
+        "result": null
+      },
+      {
+        "match_number": 104,
+        "home_team": "Crystal Palace",
+        "away_team": "Brighton",
+        "bet_on": "Brighton",
+        "odds": 3.15,
+        "stake": 100,
+        "result": null
+      },
+      {
+        "match_number": 107,
+        "home_team": "Nott'm Forest",
+        "away_team": "Leeds",
+        "bet_on": "Leeds",
+        "odds": 3.20,
+        "stake": 100,
+        "result": null
+      },
+      {
+        "match_number": 106,
+        "home_team": "Man City",
+        "away_team": "Liverpool",
+        "bet_on": "Man City",
+        "odds": 1.91,
+        "stake": 100,
         "result": null
       }
     ]
   },
   {
     "gameweek": 12,
-    "bets": [
+    "ml_bets": [
+      {
+        "match_number": 114,
+        "home_team": "Burnley",
+        "away_team": "Chelsea",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 112,
+        "home_team": "Bournemouth",
+        "away_team": "West Ham",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 113,
+        "home_team": "Brighton",
+        "away_team": "Brentford",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 115,
+        "home_team": "Fulham",
+        "away_team": "Sunderland",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 117,
+        "home_team": "Liverpool",
+        "away_team": "Nott'm Forest",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 120,
+        "home_team": "Wolves",
+        "away_team": "Crystal Palace",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 119,
+        "home_team": "Newcastle",
+        "away_team": "Man City",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 116,
+        "home_team": "Leeds",
+        "away_team": "Aston Villa",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 111,
+        "home_team": "Arsenal",
+        "away_team": "Spurs",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 118,
+        "home_team": "Man Utd",
+        "away_team": "Everton",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      }
+    ],
+    "llm_bets": [
       {
         "match_number": 114,
         "home_team": "Burnley",
@@ -1141,7 +2245,99 @@
   },
   {
     "gameweek": 13,
-    "bets": [
+    "ml_bets": [
+      {
+        "match_number": 122,
+        "home_team": "Brentford",
+        "away_team": "Burnley",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 126,
+        "home_team": "Man City",
+        "away_team": "Leeds",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 128,
+        "home_team": "Sunderland",
+        "away_team": "Bournemouth",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 125,
+        "home_team": "Everton",
+        "away_team": "Newcastle",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 129,
+        "home_team": "Spurs",
+        "away_team": "Fulham",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 124,
+        "home_team": "Crystal Palace",
+        "away_team": "Man Utd",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 121,
+        "home_team": "Aston Villa",
+        "away_team": "Wolves",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 127,
+        "home_team": "Nott'm Forest",
+        "away_team": "Brighton",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 130,
+        "home_team": "West Ham",
+        "away_team": "Liverpool",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 123,
+        "home_team": "Chelsea",
+        "away_team": "Arsenal",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      }
+    ],
+    "llm_bets": [
       {
         "match_number": 122,
         "home_team": "Brentford",
@@ -1236,7 +2432,99 @@
   },
   {
     "gameweek": 14,
-    "bets": [
+    "ml_bets": [
+      {
+        "match_number": 132,
+        "home_team": "Bournemouth",
+        "away_team": "Everton",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 135,
+        "home_team": "Fulham",
+        "away_team": "Man City",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 139,
+        "home_team": "Newcastle",
+        "away_team": "Spurs",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 131,
+        "home_team": "Arsenal",
+        "away_team": "Brentford",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 133,
+        "home_team": "Brighton",
+        "away_team": "Aston Villa",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 134,
+        "home_team": "Burnley",
+        "away_team": "Crystal Palace",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 140,
+        "home_team": "Wolves",
+        "away_team": "Nott'm Forest",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 136,
+        "home_team": "Leeds",
+        "away_team": "Chelsea",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 137,
+        "home_team": "Liverpool",
+        "away_team": "Sunderland",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 138,
+        "home_team": "Man Utd",
+        "away_team": "West Ham",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      }
+    ],
+    "llm_bets": [
       {
         "match_number": 132,
         "home_team": "Bournemouth",
@@ -1331,7 +2619,99 @@
   },
   {
     "gameweek": 15,
-    "bets": [
+    "ml_bets": [
+      {
+        "match_number": 141,
+        "home_team": "Aston Villa",
+        "away_team": "Arsenal",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 142,
+        "home_team": "Bournemouth",
+        "away_team": "Chelsea",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 144,
+        "home_team": "Everton",
+        "away_team": "Nott'm Forest",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 147,
+        "home_team": "Man City",
+        "away_team": "Sunderland",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 148,
+        "home_team": "Newcastle",
+        "away_team": "Burnley",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 149,
+        "home_team": "Spurs",
+        "away_team": "Brentford",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 146,
+        "home_team": "Leeds",
+        "away_team": "Liverpool",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 143,
+        "home_team": "Brighton",
+        "away_team": "West Ham",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 145,
+        "home_team": "Fulham",
+        "away_team": "Crystal Palace",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 150,
+        "home_team": "Wolves",
+        "away_team": "Man Utd",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      }
+    ],
+    "llm_bets": [
       {
         "match_number": 141,
         "home_team": "Aston Villa",
@@ -1426,7 +2806,99 @@
   },
   {
     "gameweek": 16,
-    "bets": [
+    "ml_bets": [
+      {
+        "match_number": 154,
+        "home_team": "Chelsea",
+        "away_team": "Everton",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 156,
+        "home_team": "Liverpool",
+        "away_team": "Brighton",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 153,
+        "home_team": "Burnley",
+        "away_team": "Fulham",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 151,
+        "home_team": "Arsenal",
+        "away_team": "Wolves",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 155,
+        "home_team": "Crystal Palace",
+        "away_team": "Man City",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 158,
+        "home_team": "Nott'm Forest",
+        "away_team": "Spurs",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 159,
+        "home_team": "Sunderland",
+        "away_team": "Newcastle",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 160,
+        "home_team": "West Ham",
+        "away_team": "Aston Villa",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 152,
+        "home_team": "Brentford",
+        "away_team": "Leeds",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 157,
+        "home_team": "Man Utd",
+        "away_team": "Bournemouth",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      }
+    ],
+    "llm_bets": [
       {
         "match_number": 154,
         "home_team": "Chelsea",
@@ -1521,7 +2993,99 @@
   },
   {
     "gameweek": 17,
-    "bets": [
+    "ml_bets": [
+      {
+        "match_number": 168,
+        "home_team": "Newcastle",
+        "away_team": "Chelsea",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 162,
+        "home_team": "Bournemouth",
+        "away_team": "Burnley",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 163,
+        "home_team": "Brighton",
+        "away_team": "Sunderland",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 167,
+        "home_team": "Man City",
+        "away_team": "West Ham",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 170,
+        "home_team": "Wolves",
+        "away_team": "Brentford",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 169,
+        "home_team": "Spurs",
+        "away_team": "Liverpool",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 164,
+        "home_team": "Everton",
+        "away_team": "Arsenal",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 166,
+        "home_team": "Leeds",
+        "away_team": "Crystal Palace",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 161,
+        "home_team": "Aston Villa",
+        "away_team": "Man Utd",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 165,
+        "home_team": "Fulham",
+        "away_team": "Nott'm Forest",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      }
+    ],
+    "llm_bets": [
       {
         "match_number": 168,
         "home_team": "Newcastle",
@@ -1616,7 +3180,99 @@
   },
   {
     "gameweek": 18,
-    "bets": [
+    "ml_bets": [
+      {
+        "match_number": 177,
+        "home_team": "Man Utd",
+        "away_team": "Newcastle",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 178,
+        "home_team": "Nott'm Forest",
+        "away_team": "Man City",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 171,
+        "home_team": "Arsenal",
+        "away_team": "Brighton",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 172,
+        "home_team": "Brentford",
+        "away_team": "Bournemouth",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 173,
+        "home_team": "Burnley",
+        "away_team": "Everton",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 176,
+        "home_team": "Liverpool",
+        "away_team": "Wolves",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 180,
+        "home_team": "West Ham",
+        "away_team": "Fulham",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 174,
+        "home_team": "Chelsea",
+        "away_team": "Aston Villa",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 179,
+        "home_team": "Sunderland",
+        "away_team": "Leeds",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 175,
+        "home_team": "Crystal Palace",
+        "away_team": "Spurs",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      }
+    ],
+    "llm_bets": [
       {
         "match_number": 177,
         "home_team": "Man Utd",
@@ -1711,7 +3367,99 @@
   },
   {
     "gameweek": 19,
-    "bets": [
+    "ml_bets": [
+      {
+        "match_number": 183,
+        "home_team": "Burnley",
+        "away_team": "Newcastle",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 184,
+        "home_team": "Chelsea",
+        "away_team": "Bournemouth",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 188,
+        "home_team": "Nott'm Forest",
+        "away_team": "Everton",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 190,
+        "home_team": "West Ham",
+        "away_team": "Brighton",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 181,
+        "home_team": "Arsenal",
+        "away_team": "Aston Villa",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 187,
+        "home_team": "Man Utd",
+        "away_team": "Wolves",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 185,
+        "home_team": "Crystal Palace",
+        "away_team": "Fulham",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 186,
+        "home_team": "Liverpool",
+        "away_team": "Leeds",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 182,
+        "home_team": "Brentford",
+        "away_team": "Spurs",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 189,
+        "home_team": "Sunderland",
+        "away_team": "Man City",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      }
+    ],
+    "llm_bets": [
       {
         "match_number": 183,
         "home_team": "Burnley",
@@ -1806,7 +3554,99 @@
   },
   {
     "gameweek": 20,
-    "bets": [
+    "ml_bets": [
+      {
+        "match_number": 191,
+        "home_team": "Aston Villa",
+        "away_team": "Nott'm Forest",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 193,
+        "home_team": "Brighton",
+        "away_team": "Burnley",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 200,
+        "home_team": "Wolves",
+        "away_team": "West Ham",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 192,
+        "home_team": "Bournemouth",
+        "away_team": "Arsenal",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 196,
+        "home_team": "Leeds",
+        "away_team": "Man Utd",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 194,
+        "home_team": "Everton",
+        "away_team": "Brentford",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 195,
+        "home_team": "Fulham",
+        "away_team": "Liverpool",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 198,
+        "home_team": "Newcastle",
+        "away_team": "Crystal Palace",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 199,
+        "home_team": "Spurs",
+        "away_team": "Sunderland",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 197,
+        "home_team": "Man City",
+        "away_team": "Chelsea",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      }
+    ],
+    "llm_bets": [
       {
         "match_number": 191,
         "home_team": "Aston Villa",
@@ -1901,7 +3741,99 @@
   },
   {
     "gameweek": 21,
-    "bets": [
+    "ml_bets": [
+      {
+        "match_number": 210,
+        "home_team": "West Ham",
+        "away_team": "Nott'm Forest",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 202,
+        "home_team": "Bournemouth",
+        "away_team": "Spurs",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 203,
+        "home_team": "Brentford",
+        "away_team": "Sunderland",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 205,
+        "home_team": "Crystal Palace",
+        "away_team": "Aston Villa",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 206,
+        "home_team": "Everton",
+        "away_team": "Wolves",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 207,
+        "home_team": "Fulham",
+        "away_team": "Chelsea",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 208,
+        "home_team": "Man City",
+        "away_team": "Brighton",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 204,
+        "home_team": "Burnley",
+        "away_team": "Man Utd",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 209,
+        "home_team": "Newcastle",
+        "away_team": "Leeds",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 201,
+        "home_team": "Arsenal",
+        "away_team": "Liverpool",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      }
+    ],
+    "llm_bets": [
       {
         "match_number": 210,
         "home_team": "West Ham",
@@ -1996,7 +3928,99 @@
   },
   {
     "gameweek": 22,
-    "bets": [
+    "ml_bets": [
+      {
+        "match_number": 211,
+        "home_team": "Aston Villa",
+        "away_team": "Everton",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 212,
+        "home_team": "Brighton",
+        "away_team": "Bournemouth",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 213,
+        "home_team": "Chelsea",
+        "away_team": "Brentford",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 214,
+        "home_team": "Leeds",
+        "away_team": "Fulham",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 215,
+        "home_team": "Liverpool",
+        "away_team": "Burnley",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 216,
+        "home_team": "Man Utd",
+        "away_team": "Man City",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 217,
+        "home_team": "Nott'm Forest",
+        "away_team": "Arsenal",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 218,
+        "home_team": "Sunderland",
+        "away_team": "Crystal Palace",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 219,
+        "home_team": "Spurs",
+        "away_team": "West Ham",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 220,
+        "home_team": "Wolves",
+        "away_team": "Newcastle",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      }
+    ],
+    "llm_bets": [
       {
         "match_number": 211,
         "home_team": "Aston Villa",
@@ -2091,7 +4115,99 @@
   },
   {
     "gameweek": 23,
-    "bets": [
+    "ml_bets": [
+      {
+        "match_number": 221,
+        "home_team": "Arsenal",
+        "away_team": "Man Utd",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 222,
+        "home_team": "Bournemouth",
+        "away_team": "Liverpool",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 223,
+        "home_team": "Brentford",
+        "away_team": "Nott'm Forest",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 224,
+        "home_team": "Burnley",
+        "away_team": "Spurs",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 225,
+        "home_team": "Crystal Palace",
+        "away_team": "Chelsea",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 226,
+        "home_team": "Everton",
+        "away_team": "Leeds",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 227,
+        "home_team": "Fulham",
+        "away_team": "Brighton",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 228,
+        "home_team": "Man City",
+        "away_team": "Wolves",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 229,
+        "home_team": "Newcastle",
+        "away_team": "Aston Villa",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 230,
+        "home_team": "West Ham",
+        "away_team": "Sunderland",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      }
+    ],
+    "llm_bets": [
       {
         "match_number": 221,
         "home_team": "Arsenal",
@@ -2186,7 +4302,99 @@
   },
   {
     "gameweek": 24,
-    "bets": [
+    "ml_bets": [
+      {
+        "match_number": 231,
+        "home_team": "Aston Villa",
+        "away_team": "Brentford",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 232,
+        "home_team": "Brighton",
+        "away_team": "Everton",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 233,
+        "home_team": "Chelsea",
+        "away_team": "West Ham",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 234,
+        "home_team": "Leeds",
+        "away_team": "Arsenal",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 235,
+        "home_team": "Liverpool",
+        "away_team": "Newcastle",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 236,
+        "home_team": "Man Utd",
+        "away_team": "Fulham",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 237,
+        "home_team": "Nott'm Forest",
+        "away_team": "Crystal Palace",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 238,
+        "home_team": "Sunderland",
+        "away_team": "Burnley",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 239,
+        "home_team": "Spurs",
+        "away_team": "Man City",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 240,
+        "home_team": "Wolves",
+        "away_team": "Bournemouth",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      }
+    ],
+    "llm_bets": [
       {
         "match_number": 231,
         "home_team": "Aston Villa",
@@ -2281,7 +4489,99 @@
   },
   {
     "gameweek": 25,
-    "bets": [
+    "ml_bets": [
+      {
+        "match_number": 241,
+        "home_team": "Arsenal",
+        "away_team": "Sunderland",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 242,
+        "home_team": "Bournemouth",
+        "away_team": "Aston Villa",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 243,
+        "home_team": "Brighton",
+        "away_team": "Crystal Palace",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 244,
+        "home_team": "Burnley",
+        "away_team": "West Ham",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 245,
+        "home_team": "Fulham",
+        "away_team": "Everton",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 246,
+        "home_team": "Leeds",
+        "away_team": "Nott'm Forest",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 247,
+        "home_team": "Liverpool",
+        "away_team": "Man City",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 248,
+        "home_team": "Man Utd",
+        "away_team": "Spurs",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 249,
+        "home_team": "Newcastle",
+        "away_team": "Brentford",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 250,
+        "home_team": "Wolves",
+        "away_team": "Chelsea",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      }
+    ],
+    "llm_bets": [
       {
         "match_number": 241,
         "home_team": "Arsenal",
@@ -2376,7 +4676,99 @@
   },
   {
     "gameweek": 26,
-    "bets": [
+    "ml_bets": [
+      {
+        "match_number": 251,
+        "home_team": "Aston Villa",
+        "away_team": "Brighton",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 252,
+        "home_team": "Brentford",
+        "away_team": "Arsenal",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 253,
+        "home_team": "Chelsea",
+        "away_team": "Leeds",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 254,
+        "home_team": "Crystal Palace",
+        "away_team": "Burnley",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 255,
+        "home_team": "Everton",
+        "away_team": "Bournemouth",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 256,
+        "home_team": "Man City",
+        "away_team": "Fulham",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 257,
+        "home_team": "Nott'm Forest",
+        "away_team": "Wolves",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 258,
+        "home_team": "Sunderland",
+        "away_team": "Liverpool",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 259,
+        "home_team": "Spurs",
+        "away_team": "Newcastle",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 260,
+        "home_team": "West Ham",
+        "away_team": "Man Utd",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      }
+    ],
+    "llm_bets": [
       {
         "match_number": 251,
         "home_team": "Aston Villa",
@@ -2471,7 +4863,99 @@
   },
   {
     "gameweek": 27,
-    "bets": [
+    "ml_bets": [
+      {
+        "match_number": 261,
+        "home_team": "Aston Villa",
+        "away_team": "Leeds",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 262,
+        "home_team": "Brentford",
+        "away_team": "Brighton",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 263,
+        "home_team": "Chelsea",
+        "away_team": "Burnley",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 264,
+        "home_team": "Crystal Palace",
+        "away_team": "Wolves",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 265,
+        "home_team": "Everton",
+        "away_team": "Man Utd",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 266,
+        "home_team": "Man City",
+        "away_team": "Newcastle",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 267,
+        "home_team": "Nott'm Forest",
+        "away_team": "Liverpool",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 268,
+        "home_team": "Sunderland",
+        "away_team": "Fulham",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 269,
+        "home_team": "Spurs",
+        "away_team": "Arsenal",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 270,
+        "home_team": "West Ham",
+        "away_team": "Bournemouth",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      }
+    ],
+    "llm_bets": [
       {
         "match_number": 261,
         "home_team": "Aston Villa",
@@ -2566,7 +5050,99 @@
   },
   {
     "gameweek": 28,
-    "bets": [
+    "ml_bets": [
+      {
+        "match_number": 271,
+        "home_team": "Arsenal",
+        "away_team": "Chelsea",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 272,
+        "home_team": "Bournemouth",
+        "away_team": "Sunderland",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 273,
+        "home_team": "Brighton",
+        "away_team": "Nott'm Forest",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 274,
+        "home_team": "Burnley",
+        "away_team": "Brentford",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 275,
+        "home_team": "Fulham",
+        "away_team": "Spurs",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 276,
+        "home_team": "Leeds",
+        "away_team": "Man City",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 277,
+        "home_team": "Liverpool",
+        "away_team": "West Ham",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 278,
+        "home_team": "Man Utd",
+        "away_team": "Crystal Palace",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 279,
+        "home_team": "Newcastle",
+        "away_team": "Everton",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 280,
+        "home_team": "Wolves",
+        "away_team": "Aston Villa",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      }
+    ],
+    "llm_bets": [
       {
         "match_number": 271,
         "home_team": "Arsenal",
@@ -2661,7 +5237,99 @@
   },
   {
     "gameweek": 29,
-    "bets": [
+    "ml_bets": [
+      {
+        "match_number": 281,
+        "home_team": "Aston Villa",
+        "away_team": "Chelsea",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 282,
+        "home_team": "Bournemouth",
+        "away_team": "Brentford",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 283,
+        "home_team": "Brighton",
+        "away_team": "Arsenal",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 284,
+        "home_team": "Everton",
+        "away_team": "Burnley",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 285,
+        "home_team": "Fulham",
+        "away_team": "West Ham",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 286,
+        "home_team": "Leeds",
+        "away_team": "Sunderland",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 287,
+        "home_team": "Man City",
+        "away_team": "Nott'm Forest",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 288,
+        "home_team": "Newcastle",
+        "away_team": "Man Utd",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 289,
+        "home_team": "Spurs",
+        "away_team": "Crystal Palace",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 290,
+        "home_team": "Wolves",
+        "away_team": "Liverpool",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      }
+    ],
+    "llm_bets": [
       {
         "match_number": 281,
         "home_team": "Aston Villa",
@@ -2756,7 +5424,99 @@
   },
   {
     "gameweek": 30,
-    "bets": [
+    "ml_bets": [
+      {
+        "match_number": 291,
+        "home_team": "Arsenal",
+        "away_team": "Everton",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 292,
+        "home_team": "Brentford",
+        "away_team": "Wolves",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 293,
+        "home_team": "Burnley",
+        "away_team": "Bournemouth",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 294,
+        "home_team": "Chelsea",
+        "away_team": "Newcastle",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 295,
+        "home_team": "Crystal Palace",
+        "away_team": "Leeds",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 296,
+        "home_team": "Liverpool",
+        "away_team": "Spurs",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 297,
+        "home_team": "Man Utd",
+        "away_team": "Aston Villa",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 298,
+        "home_team": "Nott'm Forest",
+        "away_team": "Fulham",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 299,
+        "home_team": "Sunderland",
+        "away_team": "Brighton",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 300,
+        "home_team": "West Ham",
+        "away_team": "Man City",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      }
+    ],
+    "llm_bets": [
       {
         "match_number": 291,
         "home_team": "Arsenal",
@@ -2851,7 +5611,99 @@
   },
   {
     "gameweek": 31,
-    "bets": [
+    "ml_bets": [
+      {
+        "match_number": 301,
+        "home_team": "Aston Villa",
+        "away_team": "West Ham",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 302,
+        "home_team": "Bournemouth",
+        "away_team": "Man Utd",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 303,
+        "home_team": "Brighton",
+        "away_team": "Liverpool",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 304,
+        "home_team": "Everton",
+        "away_team": "Chelsea",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 305,
+        "home_team": "Fulham",
+        "away_team": "Burnley",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 306,
+        "home_team": "Leeds",
+        "away_team": "Brentford",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 307,
+        "home_team": "Man City",
+        "away_team": "Crystal Palace",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 308,
+        "home_team": "Newcastle",
+        "away_team": "Sunderland",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 309,
+        "home_team": "Spurs",
+        "away_team": "Nott'm Forest",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 310,
+        "home_team": "Wolves",
+        "away_team": "Arsenal",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      }
+    ],
+    "llm_bets": [
       {
         "match_number": 301,
         "home_team": "Aston Villa",
@@ -2946,7 +5798,99 @@
   },
   {
     "gameweek": 32,
-    "bets": [
+    "ml_bets": [
+      {
+        "match_number": 311,
+        "home_team": "Arsenal",
+        "away_team": "Bournemouth",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 312,
+        "home_team": "Brentford",
+        "away_team": "Everton",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 313,
+        "home_team": "Burnley",
+        "away_team": "Brighton",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 314,
+        "home_team": "Chelsea",
+        "away_team": "Man City",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 315,
+        "home_team": "Crystal Palace",
+        "away_team": "Newcastle",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 316,
+        "home_team": "Liverpool",
+        "away_team": "Fulham",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 317,
+        "home_team": "Man Utd",
+        "away_team": "Leeds",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 318,
+        "home_team": "Nott'm Forest",
+        "away_team": "Aston Villa",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 319,
+        "home_team": "Sunderland",
+        "away_team": "Spurs",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 320,
+        "home_team": "West Ham",
+        "away_team": "Wolves",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      }
+    ],
+    "llm_bets": [
       {
         "match_number": 311,
         "home_team": "Arsenal",
@@ -3041,7 +5985,99 @@
   },
   {
     "gameweek": 33,
-    "bets": [
+    "ml_bets": [
+      {
+        "match_number": 321,
+        "home_team": "Aston Villa",
+        "away_team": "Sunderland",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 322,
+        "home_team": "Brentford",
+        "away_team": "Fulham",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 323,
+        "home_team": "Chelsea",
+        "away_team": "Man Utd",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 324,
+        "home_team": "Crystal Palace",
+        "away_team": "West Ham",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 325,
+        "home_team": "Everton",
+        "away_team": "Liverpool",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 326,
+        "home_team": "Leeds",
+        "away_team": "Wolves",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 327,
+        "home_team": "Man City",
+        "away_team": "Arsenal",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 328,
+        "home_team": "Newcastle",
+        "away_team": "Bournemouth",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 329,
+        "home_team": "Nott'm Forest",
+        "away_team": "Burnley",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 330,
+        "home_team": "Spurs",
+        "away_team": "Brighton",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      }
+    ],
+    "llm_bets": [
       {
         "match_number": 321,
         "home_team": "Aston Villa",
@@ -3136,7 +6172,99 @@
   },
   {
     "gameweek": 34,
-    "bets": [
+    "ml_bets": [
+      {
+        "match_number": 331,
+        "home_team": "Arsenal",
+        "away_team": "Newcastle",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 332,
+        "home_team": "Bournemouth",
+        "away_team": "Leeds",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 333,
+        "home_team": "Brighton",
+        "away_team": "Chelsea",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 334,
+        "home_team": "Burnley",
+        "away_team": "Man City",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 335,
+        "home_team": "Fulham",
+        "away_team": "Aston Villa",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 336,
+        "home_team": "Liverpool",
+        "away_team": "Crystal Palace",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 337,
+        "home_team": "Man Utd",
+        "away_team": "Brentford",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 338,
+        "home_team": "Sunderland",
+        "away_team": "Nott'm Forest",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 339,
+        "home_team": "West Ham",
+        "away_team": "Everton",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 340,
+        "home_team": "Wolves",
+        "away_team": "Spurs",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      }
+    ],
+    "llm_bets": [
       {
         "match_number": 331,
         "home_team": "Arsenal",
@@ -3231,7 +6359,99 @@
   },
   {
     "gameweek": 35,
-    "bets": [
+    "ml_bets": [
+      {
+        "match_number": 341,
+        "home_team": "Arsenal",
+        "away_team": "Fulham",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 342,
+        "home_team": "Aston Villa",
+        "away_team": "Spurs",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 343,
+        "home_team": "Bournemouth",
+        "away_team": "Crystal Palace",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 344,
+        "home_team": "Brentford",
+        "away_team": "West Ham",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 345,
+        "home_team": "Chelsea",
+        "away_team": "Nott'm Forest",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 346,
+        "home_team": "Everton",
+        "away_team": "Man City",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 347,
+        "home_team": "Leeds",
+        "away_team": "Burnley",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 348,
+        "home_team": "Man Utd",
+        "away_team": "Liverpool",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 349,
+        "home_team": "Newcastle",
+        "away_team": "Brighton",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 350,
+        "home_team": "Wolves",
+        "away_team": "Sunderland",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      }
+    ],
+    "llm_bets": [
       {
         "match_number": 341,
         "home_team": "Arsenal",
@@ -3326,7 +6546,99 @@
   },
   {
     "gameweek": 36,
-    "bets": [
+    "ml_bets": [
+      {
+        "match_number": 351,
+        "home_team": "Brighton",
+        "away_team": "Wolves",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 352,
+        "home_team": "Burnley",
+        "away_team": "Aston Villa",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 353,
+        "home_team": "Crystal Palace",
+        "away_team": "Everton",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 354,
+        "home_team": "Fulham",
+        "away_team": "Bournemouth",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 355,
+        "home_team": "Liverpool",
+        "away_team": "Chelsea",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 356,
+        "home_team": "Man City",
+        "away_team": "Brentford",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 357,
+        "home_team": "Nott'm Forest",
+        "away_team": "Newcastle",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 358,
+        "home_team": "Sunderland",
+        "away_team": "Man Utd",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 359,
+        "home_team": "Spurs",
+        "away_team": "Leeds",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 360,
+        "home_team": "West Ham",
+        "away_team": "Arsenal",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      }
+    ],
+    "llm_bets": [
       {
         "match_number": 351,
         "home_team": "Brighton",
@@ -3421,7 +6733,99 @@
   },
   {
     "gameweek": 37,
-    "bets": [
+    "ml_bets": [
+      {
+        "match_number": 361,
+        "home_team": "Arsenal",
+        "away_team": "Burnley",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 362,
+        "home_team": "Aston Villa",
+        "away_team": "Liverpool",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 363,
+        "home_team": "Bournemouth",
+        "away_team": "Man City",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 364,
+        "home_team": "Brentford",
+        "away_team": "Crystal Palace",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 365,
+        "home_team": "Chelsea",
+        "away_team": "Spurs",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 366,
+        "home_team": "Everton",
+        "away_team": "Sunderland",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 367,
+        "home_team": "Leeds",
+        "away_team": "Brighton",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 368,
+        "home_team": "Man Utd",
+        "away_team": "Nott'm Forest",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 369,
+        "home_team": "Newcastle",
+        "away_team": "West Ham",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 370,
+        "home_team": "Wolves",
+        "away_team": "Fulham",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      }
+    ],
+    "llm_bets": [
       {
         "match_number": 361,
         "home_team": "Arsenal",
@@ -3516,7 +6920,99 @@
   },
   {
     "gameweek": 38,
-    "bets": [
+    "ml_bets": [
+      {
+        "match_number": 371,
+        "home_team": "Brighton",
+        "away_team": "Man Utd",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 372,
+        "home_team": "Burnley",
+        "away_team": "Wolves",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 373,
+        "home_team": "Crystal Palace",
+        "away_team": "Arsenal",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 374,
+        "home_team": "Fulham",
+        "away_team": "Newcastle",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 375,
+        "home_team": "Liverpool",
+        "away_team": "Brentford",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 376,
+        "home_team": "Man City",
+        "away_team": "Aston Villa",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 377,
+        "home_team": "Nott'm Forest",
+        "away_team": "Bournemouth",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 378,
+        "home_team": "Sunderland",
+        "away_team": "Chelsea",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 379,
+        "home_team": "Spurs",
+        "away_team": "Everton",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      },
+      {
+        "match_number": 380,
+        "home_team": "West Ham",
+        "away_team": "Leeds",
+        "bet_on": null,
+        "odds": 0,
+        "stake": 0,
+        "result": null
+      }
+    ],
+    "llm_bets": [
       {
         "match_number": 371,
         "home_team": "Brighton",

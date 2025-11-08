@@ -1,6 +1,14 @@
 import pandas as pd
 import json
 
+# Load existing bets data
+bets_file = '../../frontend/src/data/bets.json'
+try:
+    with open(bets_file, 'r') as f:
+        existing_data = json.load(f)
+except FileNotFoundError:
+    existing_data = []
+
 # Load the CSV
 df = pd.read_csv('../2025-26.csv')
 
@@ -13,73 +21,53 @@ except FileNotFoundError:
     pred_lookup = {}
     print("⚠️  predictions.json not found. Using empty predictions.")
 
-# Group by gameweek
-gameweeks = []
-for gw in sorted(df['Round Number'].unique()):
-    gw_matches = df[df['Round Number'] == gw]
-    bets = []
+# Create new structure
+new_gameweeks = []
+
+for gw_data in existing_data:
+    gw_num = gw_data['gameweek']
     
-    for _, match in gw_matches.iterrows():
-        match_num = int(match['Match Number'])
-        home_team = match['Home Team']
-        away_team = match['Away Team']
-        has_result = pd.notna(match['Result'])
+    # Convert old structure to new structure
+    if 'bets' in gw_data and 'ml_bets' not in gw_data:
+        # Old structure - convert it
+        old_bets = gw_data.get('bets', [])
         
-        # Get prediction for this match
-        pred = pred_lookup.get(match_num, {})
-        
-        # Determine bet selection based on highest probability
-        bet_on = None
-        stake = 0
-        
-        if not has_result and pred:
-            # Only bet on upcoming matches with predictions
-            home_prob = pred.get('home_win_probability', 0)
-            draw_prob = pred.get('draw_probability', 0)
-            away_prob = pred.get('away_win_probability', 0)
-            
-            max_prob = max(home_prob, draw_prob, away_prob)
-            
-            if max_prob == home_prob:
-                bet_on = home_team
-            elif max_prob == draw_prob:
-                bet_on = "Draw"
-            else:
-                bet_on = away_team
-            
-            stake = 100
-        
-        # For completed matches or matches without predictions, stake is 0
-        if has_result or not pred:
-            stake = 0
-            bet_on = None
-        
-        bets.append({
-            "match_number": match_num,
-            "home_team": home_team,
-            "away_team": away_team,
-            "bet_on": bet_on,
-            "odds": 0,  # Placeholder for manual entry
-            "stake": stake,
-            "result": None  # Will be updated manually
+        # Keep all existing bets in both ML and LLM (you'll update LLM later)
+        new_gameweeks.append({
+            "gameweek": gw_num,
+            "ml_bets": old_bets,  # Keep ALL existing bets
+            "llm_bets": old_bets  # Same bets for now, you'll update later
         })
-    
-    gameweeks.append({
-        "gameweek": int(gw),
-        "bets": bets
-    })
+    else:
+        # Already in new structure - keep as is
+        new_gameweeks.append({
+            "gameweek": gw_num,
+            "ml_bets": gw_data.get('ml_bets', []),
+            "llm_bets": gw_data.get('llm_bets', [])
+        })
+
+# Fill in missing gameweeks
+existing_gws = {gw['gameweek'] for gw in new_gameweeks}
+for gw in sorted(df['Round Number'].unique()):
+    if gw not in existing_gws:
+        new_gameweeks.append({
+            "gameweek": int(gw),
+            "ml_bets": [],
+            "llm_bets": []
+        })
+
+# Sort by gameweek
+new_gameweeks.sort(key=lambda x: x['gameweek'])
 
 # Save to JSON
-output_file = '../../frontend/src/data/bets.json'
-with open(output_file, 'w') as f:
-    json.dump(gameweeks, f, indent=2)
+with open(bets_file, 'w') as f:
+    json.dump(new_gameweeks, f, indent=2)
 
-print(f"✅ Generated bets JSON with {len(gameweeks)} gameweeks")
-print(f"💾 Saved to {output_file}")
+print(f"✅ Converted bets JSON structure with {len(new_gameweeks)} gameweeks")
+print(f"💾 Updated {bets_file}")
 
 # Print summary
-total_bets = sum(len(gw['bets']) for gw in gameweeks)
-active_bets = sum(1 for gw in gameweeks for bet in gw['bets'] if bet['stake'] > 0)
-print(f"📊 Total matches: {total_bets}")
-print(f"🎯 Active bets (stake > 0): {active_bets}")
-print(f"⏸️  Zero stake (completed/no prediction): {total_bets - active_bets}")
+total_ml_bets = sum(len(gw['ml_bets']) for gw in new_gameweeks)
+total_llm_bets = sum(len(gw['llm_bets']) for gw in new_gameweeks)
+print(f"📊 Total ML bets: {total_ml_bets}")
+print(f"🤖 Total LLM bets: {total_llm_bets}")

@@ -4,6 +4,7 @@ from sklearn.model_selection import train_test_split
 from xgboost import XGBClassifier, XGBRegressor
 from sklearn.metrics import accuracy_score, r2_score
 import json
+import os
 
 # Load and train models (same as train_model.py)
 df = pd.read_csv('dataset.csv')
@@ -211,7 +212,6 @@ if current_gw is None:
 else:
     print(f"\nGenerating predictions for Gameweek {current_gw}...")
     
-    # Get upcoming matches from current gameweek only
     upcoming_matches = season_df[
         (season_df['Round Number'] == current_gw) & 
         (season_df['Result'].isna())
@@ -223,14 +223,10 @@ else:
         home_team = match['Home Team']
         away_team = match['Away Team']
         
-        # Get team stats from completed matches
         home_stats = calculate_team_stats(season_df, home_team)
         away_stats = calculate_team_stats(season_df, away_team)
-        
-        # Get H2H stats
         home_h2h, away_h2h = calculate_h2h(season_df, home_team, away_team)
         
-        # Prepare features for win prediction
         win_features = pd.DataFrame([{
             'HomeTeam_Wins_Last5': home_stats['wins'],
             'AwayTeam_Wins_Last5': away_stats['wins'],
@@ -246,7 +242,6 @@ else:
             'AwayTeam_H2H_WinPct': away_h2h
         }])
         
-        # Prepare features for score prediction
         score_features = pd.DataFrame([{
             'HomeTeam_GoalsScored_Last5_avg': home_stats['avg_goals_scored'],
             'HomeTeam_GoalsConceded_Last5_avg': home_stats['avg_goals_conceded'],
@@ -256,14 +251,17 @@ else:
             'AwayTeam_GD_Last5_avg': away_stats['avg_gd']
         }])
         
-        # Make predictions
-        win_prob = clf.predict_proba(win_features)[0][1]
         home_score = max(0, round(home_xgb.predict(score_features)[0]))
         away_score = max(0, round(away_xgb.predict(score_features)[0]))
         
-        # Simple draw probability estimation
-        draw_prob = 0.25 if abs(home_score - away_score) <= 1 else 0.15
-        away_prob = max(0.0, 1.0 - win_prob - draw_prob)
+        margin = home_score - away_score
+        exp_home = np.exp(margin)
+        exp_away = np.exp(-margin)
+        exp_draw = np.exp(-abs(margin))
+        total = exp_home + exp_away + exp_draw
+        home_win_probability = exp_home / total
+        draw_probability = exp_draw / total
+        away_win_probability = exp_away / total
         
         predictions.append({
             'match_number': int(match['Match Number']),
@@ -273,16 +271,29 @@ else:
             'home_team': home_team,
             'away_team': away_team,
             'predicted_score': f"{home_score} - {away_score}",
-            'home_win_probability': float(round(win_prob, 3)),
-            'draw_probability': float(round(draw_prob, 3)),
-            'away_win_probability': float(round(away_prob, 3))
+            'home_win_probability': float(round(home_win_probability, 3)),
+            'draw_probability': float(round(draw_probability, 3)),
+            'away_win_probability': float(round(away_win_probability, 3))
         })
         
-        print(f"  ✓ {home_team} vs {away_team}: {home_score}-{away_score} (Home win: {win_prob*100:.1f}%)")
+        # print(f"  ✓ {home_team} vs {away_team}: {home_score}-{away_score} (Home win: {win_prob*100:.1f}%)")
 
-# Save predictions
+# Read previous predictions if file exists
+if os.path.exists('predictions.json'):
+    with open('predictions.json', 'r') as f:
+        try:
+            previous_predictions = json.load(f)
+        except json.JSONDecodeError:
+            previous_predictions = []
+else:
+    previous_predictions = []
+
+# Append new predictions
+all_predictions = previous_predictions + predictions
+
+# Write back to file
 with open('predictions.json', 'w') as f:
-    json.dump(predictions, f, indent=2)
+    json.dump(all_predictions, f, indent=2)
 
 print(f"\n✅ Generated {len(predictions)} predictions for Gameweek {current_gw}")
-print(f"💾 Saved to predictions.json")
+print(f"💾 Appended to predictions.json")
