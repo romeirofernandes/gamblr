@@ -1888,7 +1888,7 @@
         "bet_on": "Everton",
         "odds": 2.31,
         "stake": 100,
-        "result": null
+        "result": "won"
       },
       {
         "match_number": 110,
@@ -1897,7 +1897,7 @@
         "bet_on": "Draw",
         "odds": 3.65,
         "stake": 100,
-        "result": null
+        "result": "lost"
       },
       {
         "match_number": 108,
@@ -1980,7 +1980,7 @@
         "bet_on": "Draw",
         "odds": 3.25,
         "stake": 100,
-        "result": null
+        "result": "lost"
       },
       {
         "match_number": 110,
@@ -1989,7 +1989,7 @@
         "bet_on": "West Ham",
         "odds": 1.86,
         "stake": 100,
-        "result": null
+        "result": "won"
       },
       {
         "match_number": 108,
