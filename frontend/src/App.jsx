@@ -4,6 +4,7 @@ import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
 import { Spinner } from "@/components/ui/spinner";
 import { Button } from "@/components/ui/button";
+import {Tooltip, TooltipContent, TooltipTrigger} from "@/components/ui/tooltip";
 import { ChevronLeft, ChevronRight, Brain, Cpu } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Navbar } from "./components/Navbar";
@@ -52,7 +53,7 @@ function getHighlightClass(match) {
   return "bg-red-50 dark:bg-red-950/20 border-l-4 border-red-500";
 }
 
-function Probabilities({ match }) {
+function Probabilities({ match, reasoning }) {
   if (match.home_win_probability === undefined) return <span className="text-xs text-muted-foreground">-</span>;
 
   const probs = [
@@ -60,27 +61,47 @@ function Probabilities({ match }) {
     { label: "D", value: match.draw_probability, key: "draw" },
     { label: "A", value: match.away_win_probability, key: "away" },
   ];
-  
-  // Check if it's approximately a draw (all probabilities near 0.33)
-  const isDraw = Math.abs(match.home_win_probability - 0.33) < 0.05 && 
-                 Math.abs(match.draw_probability - 0.33) < 0.05 && 
+
+  // Check if all probabilities are near 0.33
+  const isDraw = Math.abs(match.home_win_probability - 0.33) < 0.05 &&
+                 Math.abs(match.draw_probability - 0.33) < 0.05 &&
                  Math.abs(match.away_win_probability - 0.33) < 0.05;
-  
-  const maxValue = isDraw ? match.draw_probability : Math.max(...probs.map(p => p.value));
+
+  const maxValue = Math.max(...probs.map(p => p.value));
 
   return (
     <div className="flex gap-2">
       {probs.map((p) => (
-        <div
-          key={p.key}
-          className={`px-2 py-1 rounded text-xs font-medium ${
-            p.value === maxValue
-              ? "bg-green-100 text-green-700 dark:bg-green-950/40 dark:text-green-400"
-              : "bg-muted text-muted-foreground"
-          }`}
-        >
-          {p.label}: {(p.value * 100).toFixed(0)}%
-        </div>
+        <Tooltip key={p.key}>
+          <TooltipTrigger asChild>
+            <div
+              className={`px-3 py-1 rounded-full text-xs font-semibold border transition-colors cursor-pointer
+                ${
+                  isDraw
+                    ? (p.key === "draw"
+                        ? "bg-green-100 text-green-700 border-green-300 dark:bg-green-950/40 dark:text-green-400 dark:border-green-800"
+                        : "bg-background text-muted-foreground border-border dark:bg-background dark:text-muted-foreground")
+                    : (p.value === maxValue
+                        ? "bg-green-100 text-green-700 border-green-300 dark:bg-green-950/40 dark:text-green-400 dark:border-green-800"
+                        : "bg-background text-muted-foreground border-border dark:bg-background dark:text-muted-foreground")
+                }`}
+            >
+              {p.label}: {(p.value * 100).toFixed(0)}%
+            </div>
+          </TooltipTrigger>
+          {reasoning && (
+            <TooltipContent
+              className="max-w-xs whitespace-pre-line px-3 py-2 rounded-lg border"
+              style={{
+                background: 'var(--tooltip-bg)',
+                color: 'var(--tooltip-fg)',
+                borderColor: 'var(--border-color)',
+              }}
+            >
+              <span>{reasoning}</span>
+            </TooltipContent>
+          )}
+        </Tooltip>
       ))}
     </div>
   );
@@ -106,11 +127,8 @@ function LLMPredictions({ predictions }) {
               ({(pred.confidence * 100).toFixed(0)}%)
             </span>
           </div>
-          <div className="flex gap-2">
-            <span className="text-green-600">H: {(pred.home_win_probability * 100).toFixed(0)}%</span>
-            <span className="text-yellow-600">D: {(pred.draw_probability * 100).toFixed(0)}%</span>
-            <span className="text-red-600">A: {(pred.away_win_probability * 100).toFixed(0)}%</span>
-          </div>
+          {/* Use Probabilities with reasoning as tooltip */}
+          <Probabilities match={pred} reasoning={pred.reasoning} />
         </div>
       ))}
     </div>
@@ -222,11 +240,9 @@ const App = () => {
                             <th className="text-left p-3 text-xs font-semibold text-muted-foreground">Away</th>
                             <th className="text-left p-3 text-xs font-semibold text-muted-foreground">Result</th>
                             <th className="text-left p-3 text-xs font-semibold text-muted-foreground">
-                              {predictionMode === "ml" ? "Prediction" : "LLM Predictions"}
+                              {predictionMode === "ml" ? "Prediction" : "LLM Prediction"}
                             </th>
-                            {predictionMode === "ml" && (
-                              <th className="text-left p-3 text-xs font-semibold text-muted-foreground">Probabilities</th>
-                            )}
+                            <th className="text-left p-3 text-xs font-semibold text-muted-foreground">Probabilities</th>
                           </tr>
                         </thead>
                         <tbody>
@@ -257,14 +273,19 @@ const App = () => {
                                     <span className="text-xs text-muted-foreground">-</span>
                                   )
                                 ) : (
-                                  <LLMPredictions predictions={match.llm_predictions} />
+                                  match.llm_predictions?.[0]?.predicted_score ? (
+                                    <Badge variant="secondary" className="font-mono text-xs">{match.llm_predictions[0].predicted_score}</Badge>
+                                  ) : (
+                                    <span className="text-xs text-muted-foreground">-</span>
+                                  )
                                 )}
                               </td>
-                              {predictionMode === "ml" && (
-                                <td className="p-3">
-                                  <Probabilities match={match} />
-                                </td>
-                              )}
+                              <td className="p-3">
+                                {predictionMode === "ml"
+                                  ? <Probabilities match={match} />
+                                  : <Probabilities match={match.llm_predictions?.[0] || {}} reasoning={match.llm_predictions?.[0]?.reasoning} />
+                                }
+                              </td>
                             </motion.tr>
                           ))}
                         </tbody>
@@ -290,6 +311,9 @@ const App = () => {
                               {predictionMode === "ml" && match.predicted_score && (
                                 <Badge variant="secondary" className="font-mono text-xs">{match.predicted_score}</Badge>
                               )}
+                              {predictionMode === "llm" && match.llm_predictions?.[0]?.predicted_score && (
+                                <Badge variant="secondary" className="font-mono text-xs">{match.llm_predictions[0].predicted_score}</Badge>
+                              )}
                             </div>
                           </div>
                           <div className="space-y-2">
@@ -300,16 +324,12 @@ const App = () => {
                               <TeamCell name={match.away_team} />
                             </div>
                           </div>
-                          {predictionMode === "ml" && match.home_win_probability !== undefined && (
-                            <div className="mt-3 pt-3 border-t">
-                              <Probabilities match={match} />
-                            </div>
-                          )}
-                          {predictionMode === "llm" && (
-                            <div className="mt-3 pt-3 border-t">
-                              <LLMPredictions predictions={match.llm_predictions} />
-                            </div>
-                          )}
+                          <div className="mt-3 pt-3 border-t">
+                            {predictionMode === "ml"
+                              ? <Probabilities match={match} />
+                              : <Probabilities match={match.llm_predictions?.[0] || {}} reasoning={match.llm_predictions?.[0]?.reasoning} />
+                            }
+                          </div>
                         </motion.div>
                       ))}
                     </div>

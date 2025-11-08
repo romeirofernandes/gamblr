@@ -192,3 +192,14 @@
 button {
   cursor: pointer;
 }
+
+:root {
+  --tooltip-bg: #222;
+  --tooltip-fg: #f8fafc;
+  --border-color: #333;
+}
+.dark {
+  --tooltip-bg: #f8fafc;
+  --tooltip-fg: #222;
+  --border-color: #ddd;
+}
