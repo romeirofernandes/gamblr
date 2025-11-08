@@ -19,11 +19,9 @@ import {
 import betsData from "../data/bets.json";
 
 const Gamblr = () => {
-  const currentGwIdx = betsData.findIndex(gw => 
-    gw.ml_bets?.some(bet => bet.result === null) || 
-    gw.llm_bets?.some(bet => bet.result === null)
-  );
-  const [currentPage, setCurrentPage] = useState(currentGwIdx >= 0 ? currentGwIdx : 0);
+  const initialGwIdx = betsData.findIndex(gw => gw.gameweek === 11);
+  const currentGwIdx = initialGwIdx; // Add this line
+  const [currentPage, setCurrentPage] = useState(initialGwIdx >= 0 ? initialGwIdx : 0);
   const [activeTab, setActiveTab] = useState("ml");
 
   const BETS_DATA = betsData;
@@ -142,7 +140,7 @@ const Gamblr = () => {
                 transition={{ duration: 0.2 }}
               >
                 <Card className="mb-6 md:mb-8 shadow-lg border-2">
-                  <CardHeader className="pb-3">
+                  <CardHeader>
                     <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
                       <CardTitle className="text-lg md:text-xl font-semibold">
                         Gameweek {currentBets.gameweek} Bets
