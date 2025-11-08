@@ -339,7 +339,7 @@ const App = () => {
             )}
           </AnimatePresence>
 
-          <div className="flex items-center justify-center gap-4 mt-6">
+          <div className="flex items-center justify-center gap-4 mt-6 mb-20">
             <Button
               variant="outline"
               onClick={handlePrevious}
