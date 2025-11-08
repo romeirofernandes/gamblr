@@ -1879,7 +1879,7 @@
         "bet_on": "Draw",
         "odds": 3.55,
         "stake": 100,
-        "result": null
+        "result": "won"
       },
       {
         "match_number": 105,
@@ -1971,7 +1971,7 @@
         "bet_on": "Spurs",
         "odds": 3.00,
         "stake": 100,
-        "result": null
+        "result": "lost"
       },
       {
         "match_number": 105,
