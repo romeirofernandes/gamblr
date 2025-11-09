@@ -1906,7 +1906,7 @@
         "bet_on": "Arsenal",
         "odds": 1.46,
         "stake": 100,
-        "result": null
+        "result": "lost"
       },
       {
         "match_number": 103,
@@ -1915,7 +1915,7 @@
         "bet_on": "Chelsea",
         "odds": 1.43,
         "stake": 100,
-        "result": null
+        "result": "won"
       },
       {
         "match_number": 101,
@@ -1998,7 +1998,7 @@
         "bet_on": "Arsenal",
         "odds": 1.46,
         "stake": 100,
-        "result": null
+        "result": "lost"
       },
       {
         "match_number": 103,
@@ -2007,7 +2007,7 @@
         "bet_on": "Chelsea",
         "odds": 1.43,
         "stake": 100,
-        "result": null
+        "result": "won"
       },
       {
         "match_number": 101,

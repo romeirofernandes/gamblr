@@ -252,7 +252,14 @@ const App = () => {
                               initial={{ opacity: 0 }}
                               animate={{ opacity: 1 }}
                               transition={{ delay: index * 0.03 }}
-                              className={`border-b hover:bg-muted/20 transition-colors ${predictionMode === "ml" ? getHighlightClass(match) : ""}`}
+                              className={`border-b hover:bg-muted/20 transition-colors ${getHighlightClass(
+                                predictionMode === "ml"
+                                  ? match
+                                  : {
+                                      ...match,
+                                      predicted_score: match.llm_predictions?.[0]?.predicted_score || "",
+                                    }
+                              )}`}
                             >
                               <td className="p-3 py-5 text-xs text-muted-foreground whitespace-nowrap">{match.date}</td>
                               <td className="p-3"><TeamCell name={match.home_team} /></td>
@@ -300,7 +307,14 @@ const App = () => {
                           initial={{ opacity: 0 }}
                           animate={{ opacity: 1 }}
                           transition={{ delay: index * 0.03 }}
-                          className={`p-4 ${predictionMode === "ml" ? getHighlightClass(match) : ""}`}
+                          className={`p-4 ${getHighlightClass(
+                            predictionMode === "ml"
+                              ? match
+                              : {
+                                  ...match,
+                                  predicted_score: match.llm_predictions?.[0]?.predicted_score || "",
+                                }
+                          )}`}
                         >
                           <div className="flex items-center justify-between mb-3">
                             <span className="text-xs text-muted-foreground">{match.date}</span>
