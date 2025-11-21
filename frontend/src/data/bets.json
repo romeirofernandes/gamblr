@@ -1924,7 +1924,7 @@
         "bet_on": "Aston Villa",
         "odds": 2.31,
         "stake": 100,
-        "result": null
+        "result": "won"
       },
       {
         "match_number": 102,
@@ -1933,7 +1933,7 @@
         "bet_on": "Draw",
         "odds": 3.45,
         "stake": 100,
-        "result": null
+        "result": "lost"
       },
       {
         "match_number": 104,
@@ -1942,7 +1942,7 @@
         "bet_on": "Brighton",
         "odds": 3.15,
         "stake": 100,
-        "result": null
+        "result": "lost"
       },
       {
         "match_number": 107,
@@ -1951,7 +1951,7 @@
         "bet_on": "Draw",
         "odds": 3.35,
         "stake": 100,
-        "result": null
+        "result": "lost"
       },
       {
         "match_number": 106,
@@ -1960,7 +1960,7 @@
         "bet_on": "Man City",
         "odds": 1.91,
         "stake": 100,
-        "result": null
+        "result": "won"
       }
     ],
     "llm_bets": [
@@ -2016,7 +2016,7 @@
         "bet_on": "Aston Villa",
         "odds": 2.31,
         "stake": 100,
-        "result": null
+        "result": "won"
       },
       {
         "match_number": 102,
@@ -2025,7 +2025,7 @@
         "bet_on": "Newcastle",
         "odds": 2.50,
         "stake": 100,
-        "result": null
+        "result": "lost"
       },
       {
         "match_number": 104,
@@ -2034,7 +2034,7 @@
         "bet_on": "Brighton",
         "odds": 3.15,
         "stake": 100,
-        "result": null
+        "result": "lost"
       },
       {
         "match_number": 107,
@@ -2043,7 +2043,7 @@
         "bet_on": "Leeds",
         "odds": 3.20,
         "stake": 100,
-        "result": null
+        "result": "lost"
       },
       {
         "match_number": 106,
@@ -2052,7 +2052,7 @@
         "bet_on": "Man City",
         "odds": 1.91,
         "stake": 100,
-        "result": null
+        "result": "won"
       }
     ]
   },
