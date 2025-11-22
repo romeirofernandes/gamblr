@@ -19,7 +19,7 @@ import {
 import betsData from "../data/bets.json";
 
 const Gamblr = () => {
-  const initialGwIdx = betsData.findIndex(gw => gw.gameweek === 11);
+  const initialGwIdx = betsData.findIndex(gw => gw.gameweek === 12);
   const currentGwIdx = initialGwIdx; // Add this line
   const [currentPage, setCurrentPage] = useState(initialGwIdx >= 0 ? initialGwIdx : 0);
   const [activeTab, setActiveTab] = useState("ml");
