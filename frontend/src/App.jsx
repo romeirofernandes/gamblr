@@ -13,8 +13,6 @@ import { IoInformationCircleOutline } from "react-icons/io5";
 import mlPredictionsData from "./data/predictions.json";
 import llmPredictionsData from "./data/llm_predictions.json";
 
-const API_URL = import.meta.env.VITE_API_URL || "http://localhost:8000";
-
 function TeamCell({ name }) {
   return (
     <div className="flex items-center gap-2">
