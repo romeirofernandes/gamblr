@@ -295,5 +295,12 @@ all_predictions = previous_predictions + predictions
 with open('predictions.json', 'w') as f:
     json.dump(all_predictions, f, indent=2)
 
-print(f"\n✅ Generated {len(predictions)} predictions for Gameweek {current_gw}")
-print(f"💾 Appended to predictions.json")
+# Write predictions to frontend data folder
+frontend_path = '../../frontend/src/data/predictions.json'
+os.makedirs(os.path.dirname(frontend_path), exist_ok=True)
+
+with open(frontend_path, 'w') as f:
+    json.dump(all_predictions, f, indent=2)
+
+print(f"✅ Generated {len(predictions)} predictions for Gameweek {current_gw}")
+print(f"💾 Saved to {frontend_path}")

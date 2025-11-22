@@ -10,6 +10,8 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Navbar } from "./components/Navbar";
 import { ThemeProvider } from "./components/theme-provider";
 import { IoInformationCircleOutline } from "react-icons/io5";
+import mlPredictionsData from "./data/predictions.json";
+import llmPredictionsData from "./data/llm_predictions.json";
 
 const API_URL = import.meta.env.VITE_API_URL || "http://localhost:8000";
 
@@ -136,21 +138,38 @@ function LLMPredictions({ predictions }) {
 }
 
 const App = () => {
-  const [mlGameweeks, setMlGameweeks] = useState([]);
-  const [llmGameweeks, setLlmGameweeks] = useState([]);
+  const [gameweeks, setGameweeks] = useState([]);
   const [loading, setLoading] = useState(true);
   const [currentPage, setCurrentPage] = useState(0);
-  const [predictionMode, setPredictionMode] = useState("ml"); // "ml" or "llm"
+  const [predictionMode, setPredictionMode] = useState("ml");
 
   useEffect(() => {
-    Promise.all([
-      fetch(`${API_URL}`).then(res => res.json()),
-      fetch(`${API_URL}/llm`).then(res => res.json())
-    ])
-      .then(([mlData, llmData]) => {
-        setMlGameweeks(mlData);
-        setLlmGameweeks(llmData);
-        const currentGwIndex = mlData.findIndex(gw => gw.is_current);
+    // Load CSV from public folder
+    fetch('/2025-26.csv')
+      .then(res => res.text())
+      .then(csvText => {
+        // Parse CSV
+        const lines = csvText.trim().split('\n');
+        const headers = lines[0].split(',');
+        const seasonData = lines.slice(1).map(line => {
+          const values = line.split(',');
+          const row = {};
+          headers.forEach((header, i) => {
+            row[header.trim()] = values[i]?.trim() || '';
+          });
+          return row;
+        });
+
+        // Merge with predictions
+        const processedGameweeks = mergeGameweeksWithPredictions(
+          seasonData,
+          mlPredictionsData,
+          llmPredictionsData
+        );
+        
+        setGameweeks(processedGameweeks);
+        
+        const currentGwIndex = processedGameweeks.findIndex(gw => gw.is_current);
         if (currentGwIndex !== -1) {
           setCurrentPage(currentGwIndex);
         }
@@ -160,7 +179,7 @@ const App = () => {
   }, []);
 
   const handlePrevious = () => setCurrentPage((prev) => Math.max(0, prev - 1));
-  const handleNext = () => setCurrentPage((prev) => Math.min(mlGameweeks.length - 1, prev + 1));
+  const handleNext = () => setCurrentPage((prev) => Math.min(gameweeks.length - 1, prev + 1));
 
   if (loading) {
     return (
@@ -172,7 +191,7 @@ const App = () => {
     );
   }
 
-  const currentGameweek = predictionMode === "ml" ? mlGameweeks[currentPage] : llmGameweeks[currentPage];
+  const currentGameweek = predictionMode === "ml" ? gameweeks[currentPage] : llmGameweeks[currentPage];
 
   return (
     <ThemeProvider defaultTheme="system" storageKey="gamblr-theme">
@@ -364,12 +383,12 @@ const App = () => {
               <ChevronLeft className="h-4 w-4" />
             </Button>
             <span className="text-xs md:text-sm text-muted-foreground font-medium">
-              Gameweek {currentPage + 1} of {mlGameweeks.length}
+              Gameweek {currentPage + 1} of {gameweeks.length}
             </span>
             <Button
               variant="outline"
               onClick={handleNext}
-              disabled={currentPage === mlGameweeks.length - 1}
+              disabled={currentPage === gameweeks.length - 1}
               size="sm"
               className="rounded-full"
             >
@@ -395,5 +414,71 @@ const App = () => {
     </ThemeProvider>
   );
 };
+
+function mergeGameweeksWithPredictions(seasonData, mlPredictions, llmPredictions) {
+  // Create lookup maps
+  const mlLookup = {};
+  mlPredictions.forEach(pred => {
+    mlLookup[pred.match_number] = pred;
+  });
+
+  const llmLookup = {};
+  llmPredictions.forEach(pred => {
+    const matchNum = pred.match_number;
+    if (!llmLookup[matchNum]) {
+      llmLookup[matchNum] = [];
+    }
+    llmLookup[matchNum].push(pred);
+  });
+
+  // Group matches by round number
+  const gameweekMap = {};
+  seasonData.forEach(match => {
+    const roundNum = parseInt(match['Round Number']);
+    if (!gameweekMap[roundNum]) {
+      gameweekMap[roundNum] = [];
+    }
+
+    const matchNum = parseInt(match['Match Number']);
+    const mlPred = mlLookup[matchNum] || {};
+    const llmPreds = llmLookup[matchNum] || [];
+
+    gameweekMap[roundNum].push({
+      match_number: matchNum,
+      round_number: roundNum,
+      date: match['Date'],
+      location: match['Location'],
+      home_team: match['Home Team'],
+      away_team: match['Away Team'],
+      result: match['Result'] || null,
+      // ML predictions
+      predicted_score: mlPred.predicted_score || null,
+      home_win_probability: mlPred.home_win_probability || null,
+      draw_probability: mlPred.draw_probability || null,
+      away_win_probability: mlPred.away_win_probability || null,
+      // LLM predictions
+      llm_predictions: llmPreds,
+    });
+  });
+
+  // Convert to array and determine current gameweek
+  let currentGw = null;
+  for (const roundNum of Object.keys(gameweekMap).sort((a, b) => a - b)) {
+    const matches = gameweekMap[roundNum];
+    if (matches.some(m => !m.result)) {
+      currentGw = parseInt(roundNum);
+      break;
+    }
+  }
+
+  return Object.keys(gameweekMap)
+    .sort((a, b) => a - b)
+    .map(roundNum => ({
+      round_number: parseInt(roundNum),
+      matches: gameweekMap[roundNum],
+      is_current: parseInt(roundNum) === currentGw,
+      all_completed: gameweekMap[roundNum].every(m => m.result),
+    }));
+}
 
 export default App;

@@ -291,8 +291,15 @@ def main():
     with open(llm_predictions_file, 'w') as f:
         json.dump(all_existing_predictions, f, indent=2)
     
-    print(f"\n✅ Generated {len(all_predictions)} LLM predictions for Gameweek {current_gw}")
-    print(f"💾 Saved to {llm_predictions_file}")
+    # Save to frontend data folder
+    frontend_path = '../../frontend/src/data/llm_predictions.json'
+    os.makedirs(os.path.dirname(frontend_path), exist_ok=True)
+
+    with open(frontend_path, 'w') as f:
+        json.dump(all_existing_predictions, f, indent=2)
+
+    print(f"✅ Generated {len(all_predictions)} LLM predictions for Gameweek {current_gw}")
+    print(f"💾 Saved to {frontend_path}")
 
 if __name__ == "__main__":
     main()
